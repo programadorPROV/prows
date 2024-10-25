@@ -1,0 +1,31 @@
+tr:
+  refinery:
+    plugins:
+      pv_services:
+        title: Pv Services
+    pv_services:
+      admin:
+        pv_services:
+          actions:
+            create_new: Yeni Ekle Pv Service
+            reorder: Tekrar sirala Pv Services
+            reorder_done: Tekrar siralama tamamlandiPv Services
+          records:
+            title: Pv Services
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Pv Services yok henuz.  Tikla "Yeni Ekle Pv Service" eklemek senin ilk pv service.
+          pv_service:
+            view_live_html: Bunu canlu pv service goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle pv service
+            delete: Bunu Sil pv service sonsuza dek
+      pv_services:
+        show:
+          other: Diger Pv Services
+  activerecord:
+    attributes:
+      'refinery/pv_services/pv_service':
+        title: Title
+        description: Description
+        photo: Photo
+        status: Status
+        refinery_pv_category_id: Refinery Pv Category

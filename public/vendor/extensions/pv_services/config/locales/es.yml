@@ -1,0 +1,32 @@
+es:
+  refinery:
+    plugins:
+      pv_services:
+        title: Servicios
+#        article: masculino/femenino
+    pv_services:
+      admin:
+        pv_services:
+          actions:
+            create_new: Crear nuevo pv service
+            reorder: Reordenar pv services
+            reorder_done: Reordenación de pv services completada
+          records:
+            title: Pv Services
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay pv services todavía. Pulsa en "Crear nuevo Pv Service" para crear tu primer pv service.
+          pv_service:
+            view_live_html: Ver este pv service como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este pv service
+            delete: Borrar este pv service para siempre
+      pv_services:
+        show:
+          other: Otros pv services
+  activerecord:
+    attributes:
+      'refinery/pv_services/pv_service':
+        title: Title
+        description: Description
+        photo: Photo
+        status: Status
+        refinery_pv_category_id: Refinery Pv Category

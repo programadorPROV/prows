@@ -1,0 +1,26 @@
+<%if @pv_documents.count != 0%>
+	<% creation_date = @pv_documents.first.creation_date.year%>
+	<h4><%= creation_date%></h4>
+	<% @pv_documents.each_with_index do |doct,index| %>
+		
+		<%if creation_date!=doct.creation_date.year%>
+			<%creation_date = doct.creation_date.year%>
+			<h4><%= creation_date%></h4>
+		<%end%>
+
+		<div class="unselected container_collapse" id="row_<%= index%>">
+			<div class="c_gray_pro_1 block pad_b_15 lh_2 action_collapse split_border" onclick="javascript:unhide('row_<%= index%>');">
+				<%=doct.title%>
+			</div>
+			<div class="collpase_hide">
+				<div class="pad_b_3 pad_t_15 body_text_2">
+					<%=doct.description.html_safe%>
+					<div class="pad_l_1 pad_t_1">
+						<%=link_to image_tag("/assets/download.svg", :class => "wh1p5 mar_r_05"), doct.file_url.url%>
+						<%= link_to "descargue aqui", doct.file_url.url, :class=>"c_green_2 underline capitalize" %>
+					</div>
+				</div>
+			</div>
+		</div>
+	<% end %>
+<%end%>

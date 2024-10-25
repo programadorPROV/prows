@@ -1,0 +1,77 @@
+<div class="swiper_default_sm pad_b_2_240_st pad_b_0_1024_st stock_swiper h100p full_h_slide relative">
+	<div class="swiper-wrapper ">
+		<%Refinery::PvStocks::PvStock.all.each do |stock|%>
+			<div class="swiper-slide relative">
+
+				<!-- title -->
+				<div class="bolder absolute_1024_st bottom_0 w20_900_st">
+					<!-- static -->
+					<span class="uppercase fs_12 c_green_1">ticker</span>
+					<!-- dinamic -->
+					<span class="uppercase fs_25 c_white">
+						<%=stock.ticker.html_safe%>
+					</span>
+					<!-- note -->
+					<div class="fs_09 f_w_normal lh_1 c_green_1 mar_t_1 ">
+						Últimos 30 días, horario cierre 16 horas
+					</div>
+				</div>
+
+				<!-- stocks -->
+				<div class="column_container pad_t_2_240_st pad_l_20r_1024_st pad_t_0_1024_st pad_r_3_1024_st container_item_stock">
+					<div class="pad_1_240_st pad_tb_0_1024_st column_1 g_s360_50p g_s700_25p bolder text-center">
+						<!-- title stock -->
+						<div class="fs_12 uppercase c_green_1">
+							Mercado
+						</div>
+						<!-- content -->
+						<div class="capitalize fs_17 c_white pad_t_1">
+							<%=stock.market.html_safe%>
+						</div>
+					</div>
+					<div class="pad_1_240_st pad_tb_0_1024_st column_1 g_s360_50p g_s700_25p bolder text-center">
+						<!-- title stock -->
+						<div class="fs_12 uppercase c_green_1">
+							Mínimo
+						</div>
+						<!-- content -->
+						<div class="capitalize fs_17 c_white pad_t_1">
+							<%= @currency.present? ? stock.send("min_"+currency) || "-" : stock.min_cor || "-"%>
+						</div>
+					</div>
+					<div class="pad_1_240_st pad_tb_0_1024_st column_1 g_s360_50p g_s700_25p bolder text-center">
+						<!-- title stock -->
+						<div class="fs_12 uppercase c_green_1">
+							Promedio
+						</div>
+						<!-- content -->
+						<div class="capitalize fs_17 c_white pad_t_1">
+							<%= @currency.present? ? stock.send("average_"+currency) || "-" : stock.average_cor || "-"%>
+						</div>
+					</div>
+					<div class="pad_1_240_st pad_tb_0_1024_st column_1 g_s360_50p g_s700_25p bolder text-center">
+						<!-- title stock -->
+						<div class="fs_12 uppercase c_green_1">
+							Máximo
+						</div>
+						<!-- content -->
+						<div class="capitalize fs_17 c_white pad_t_1">
+							<%= @currency.present? ? stock.send("max_"+currency) || "-" : stock.max_cor || "-"%>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		<%end%>
+	</div>
+
+	<!-- Add Arrows -->
+	<div class="absolute bottom_0 right_0 arrows_stock z1">
+		<div class="circle relative wh2 inline swiper_button_prev_container pointer">
+			<div class="swiper-button-prev center_absolute"></div>
+		</div>
+		<div class="circle relative wh2 inline swiper_button_next_container pointer">
+			<div class="swiper-button-next center_absolute"></div>
+		</div>
+	</div>
+</div>

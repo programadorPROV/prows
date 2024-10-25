@@ -1,0 +1,42 @@
+<%= form_for [refinery, :pv_categories_admin, @pv_category] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @pv_category,
+              :include_object_name => true %>
+
+  <%= render '/refinery/admin/locale_picker',
+              :current_locale => Globalize.locale %>
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description, :description_type],
+                :object => "pv_categories/pv_category" -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :status -%>
+    <%= f.check_box :status, :checked => @pv_category[:status] -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :type_name -%>
+    <%= f.text_field :type_name -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.pv_categories.admin.pv_categories.pv_category'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @pv_category.name) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="pv_board_directors">
+    <% @pv_board_directors.each do |pv_board_director| %>
+      <li>
+        <%= link_to pv_board_director.name, refinery.pv_board_directors_pv_board_director_path(pv_board_director) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

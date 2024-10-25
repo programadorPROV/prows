@@ -1,0 +1,34 @@
+zh-CN:
+  refinery:
+    plugins:
+      pv_documents:
+        title: Pv Documents
+    pv_documents:
+      admin:
+        pv_documents:
+          actions:
+            create_new: 建立新的 Pv Document
+            reorder: 对 Pv Documents 重新排序
+            reorder_done: 对 Pv Documents 的重新排序结束
+          records:
+            title: Pv Documents
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Pv Documents yet. Click "Add New Pv Document" to add your first pv document.
+            no_items_yet: 目前没有 Pv Documents . 点击 "Add New Pv Document" 创建一个pv document.
+          pv_document:
+            view_live_html: 查看 pv document 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 pv document
+            delete: 永久删除 pv document
+      pv_documents:
+        show:
+          other: 其他 Pv Documents
+  activerecord:
+    attributes:
+      'refinery/pv_documents/pv_document':
+        title: Title
+        description: Description
+        status: Status
+        creation_date: Creation Date
+        file_url: File Url
+        refinery_pv_category_id: Refinery Pv Category

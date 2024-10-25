@@ -1,0 +1,31 @@
+nl:
+  refinery:
+    plugins:
+      pv_faqs:
+        title: Pv Faqs
+    pv_faqs:
+      admin:
+        pv_faqs:
+          actions:
+            create_new: Nieuwe Pv Faq toevoegen
+            reorder: De volgorde van de Pv Faqs wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Pv Faq-volgorde
+          records:
+            title: Pv Faqs
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Pv Faqs. Druk op 'Nieuwe Pv Faq toevoegen' om de eerste toe te voegen.
+          pv_faq:
+            view_live_html: Deze pv faq op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze pv faq
+            delete: Deze pv faq definitief verwijderen
+      pv_faqs:
+        show:
+          other: Andere Pv Faqs
+  activerecord:
+    attributes:
+      'refinery/pv_faqs/pv_faq':
+        title: Title
+        question: Question
+        answer: Answer
+        status: Status
+        refinery_pv_category_id: Refinery Pv Category

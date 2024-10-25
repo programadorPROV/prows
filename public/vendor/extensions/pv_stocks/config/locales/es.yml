@@ -1,0 +1,36 @@
+es:
+  refinery:
+    plugins:
+      pv_stocks:
+        title: Rendimientos
+#        article: masculino/femenino
+    pv_stocks:
+      admin:
+        pv_stocks:
+          actions:
+            create_new: Crear nuevo pv stock
+            reorder: Reordenar pv stocks
+            reorder_done: Reordenación de pv stocks completada
+          records:
+            title: Pv Stocks
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay pv stocks todavía. Pulsa en "Crear nuevo Pv Stock" para crear tu primer pv stock.
+          pv_stock:
+            view_live_html: Ver este pv stock como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este pv stock
+            delete: Borrar este pv stock para siempre
+      pv_stocks:
+        show:
+          other: Otros pv stocks
+  activerecord:
+    attributes:
+      'refinery/pv_stocks/pv_stock':
+        name: Name
+        ticker: Ticker
+        market: Market
+        min_cor: Min Cor
+        average_cor: Average Cor
+        max_cor: Max Cor
+        min_usd: Min Usd
+        average_usd: Average Usd
+        max_usd: Max Usd

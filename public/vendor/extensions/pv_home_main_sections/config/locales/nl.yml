@@ -1,0 +1,29 @@
+nl:
+  refinery:
+    plugins:
+      pv_home_main_sections:
+        title: Pv Home Main Sections
+    pv_home_main_sections:
+      admin:
+        pv_home_main_sections:
+          actions:
+            create_new: Nieuwe Pv Home Main Section toevoegen
+            reorder: De volgorde van de Pv Home Main Sections wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Pv Home Main Section-volgorde
+          records:
+            title: Pv Home Main Sections
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Pv Home Main Sections. Druk op 'Nieuwe Pv Home Main Section toevoegen' om de eerste toe te voegen.
+          pv_home_main_section:
+            view_live_html: Deze pv home main section op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze pv home main section
+            delete: Deze pv home main section definitief verwijderen
+      pv_home_main_sections:
+        show:
+          other: Andere Pv Home Main Sections
+  activerecord:
+    attributes:
+      'refinery/pv_home_main_sections/pv_home_main_section':
+        title: Title
+        photo: Photo
+        description: Description

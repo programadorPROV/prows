@@ -1,0 +1,32 @@
+nl:
+  refinery:
+    plugins:
+      pv_documents:
+        title: Pv Documents
+    pv_documents:
+      admin:
+        pv_documents:
+          actions:
+            create_new: Nieuwe Pv Document toevoegen
+            reorder: De volgorde van de Pv Documents wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Pv Document-volgorde
+          records:
+            title: Pv Documents
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Pv Documents. Druk op 'Nieuwe Pv Document toevoegen' om de eerste toe te voegen.
+          pv_document:
+            view_live_html: Deze pv document op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze pv document
+            delete: Deze pv document definitief verwijderen
+      pv_documents:
+        show:
+          other: Andere Pv Documents
+  activerecord:
+    attributes:
+      'refinery/pv_documents/pv_document':
+        title: Title
+        description: Description
+        status: Status
+        creation_date: Creation Date
+        file_url: File Url
+        refinery_pv_category_id: Refinery Pv Category

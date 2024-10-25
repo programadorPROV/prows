@@ -1,0 +1,36 @@
+zh-CN:
+  refinery:
+    plugins:
+      pv_board_directors:
+        title: Pv Board Directors
+    pv_board_directors:
+      admin:
+        pv_board_directors:
+          actions:
+            create_new: 建立新的 Pv Board Director
+            reorder: 对 Pv Board Directors 重新排序
+            reorder_done: 对 Pv Board Directors 的重新排序结束
+          records:
+            title: Pv Board Directors
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Pv Board Directors yet. Click "Add New Pv Board Director" to add your first pv board director.
+            no_items_yet: 目前没有 Pv Board Directors . 点击 "Add New Pv Board Director" 创建一个pv board director.
+          pv_board_director:
+            view_live_html: 查看 pv board director 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 pv board director
+            delete: 永久删除 pv board director
+      pv_board_directors:
+        show:
+          other: 其他 Pv Board Directors
+  activerecord:
+    attributes:
+      'refinery/pv_board_directors/pv_board_director':
+        name: Name
+        last_name: Last Name
+        position: Position
+        description: Description
+        mail: Mail
+        link: Link
+        photo: Photo
+        status: Status

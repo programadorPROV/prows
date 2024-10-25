@@ -1,0 +1,1 @@
+var swiper=new Swiper(".swiper_default",{slidesPerView:1,speed:200,autoHeight:!0,loop:!0,autoplay:{delay:5e3},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});swiper=new Swiper(".swiper_default_sm",{slidesPerView:1,speed:200,autoHeight:!1,loop:!0,navigation:{nextEl:".swiper_button_prev_container",prevEl:".swiper_button_next_container"}});

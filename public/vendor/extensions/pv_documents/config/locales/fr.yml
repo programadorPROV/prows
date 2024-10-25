@@ -1,0 +1,32 @@
+fr:
+  refinery:
+    plugins:
+      pv_documents:
+        title: Pv Documents
+    pv_documents:
+      admin:
+        pv_documents:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Pv Document
+            reorder: Réordonner les Pv Documents
+            reorder_done: Fin de réordonnancement des Pv Documents
+          records:
+            title: Pv Documents
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Pv Document. Cliquer sur "Créer un(e) nouve(au/l/lle) Pv Document" pour créer votre premi(er/ère) pv document.'
+          pv_document:
+            view_live_html: Voir ce(t/tte) pv document <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) pv document
+            delete: Supprimer définitivement ce(t/tte) pv document
+      pv_documents:
+        show:
+          other: Autres Pv Documents
+  activerecord:
+    attributes:
+      'refinery/pv_documents/pv_document':
+        title: Title
+        description: Description
+        status: Status
+        creation_date: Creation Date
+        file_url: File Url
+        refinery_pv_category_id: Refinery Pv Category

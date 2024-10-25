@@ -1,0 +1,75 @@
+<% content_for :body_content_title do %>
+  <%= @pv_board_director.name %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @pv_board_director.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Last Name</h1>
+    <p>
+      <%=raw @pv_board_director.last_name %>
+    </p>
+  </section>
+  <section>
+    <h1>Position</h1>
+    <p>
+      <%=raw @pv_board_director.position %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @pv_board_director.description %>
+    </p>
+  </section>
+  <section>
+    <h1>Mail</h1>
+    <p>
+      <%=raw @pv_board_director.mail %>
+    </p>
+  </section>
+  <section>
+    <h1>Link</h1>
+    <p>
+      <%=raw @pv_board_director.link %>
+    </p>
+  </section>
+  <section>
+    <h1>Photo</h1>
+    <p>
+      <%= image_fu @pv_board_director.photo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Status</h1>
+    <p>
+      <%=raw @pv_board_director.status %>
+    </p>
+  </section>
+  <section>
+    <h1>LinkedIn</h1>
+    <p>
+      <%=raw @pv_board_director.linked_in_tag %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="pv_board_directors">
+      <% @pv_board_directors.each do |pv_board_director| %>
+        <li>
+          <%= link_to pv_board_director.name, refinery.pv_board_directors_pv_board_director_path(pv_board_director) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

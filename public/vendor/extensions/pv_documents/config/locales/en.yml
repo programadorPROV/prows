@@ -1,0 +1,32 @@
+en:
+  refinery:
+    plugins:
+      pv_documents:
+        title: Financial Documents
+    pv_documents:
+      admin:
+        pv_documents:
+          actions:
+            create_new: Add New Pv Document
+            reorder: Reorder Pv Documents
+            reorder_done: Done Reordering Pv Documents
+          records:
+            title: Pv Documents
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Pv Documents yet. Click "Add New Pv Document" to add your first pv document.
+          pv_document:
+            view_live_html: View this pv document live <br/><em>(opens in a new window)</em>
+            edit: Edit this pv document
+            delete: Remove this pv document forever
+      pv_documents:
+        show:
+          other: Other Pv Documents
+  activerecord:
+    attributes:
+      'refinery/pv_documents/pv_document':
+        title: Title
+        description: Description
+        status: Status
+        creation_date: Creation Date
+        file_url: File Url
+        refinery_pv_category_id: Refinery Pv Category

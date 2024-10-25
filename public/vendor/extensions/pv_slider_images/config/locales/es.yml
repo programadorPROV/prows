@@ -1,0 +1,31 @@
+es:
+  refinery:
+    plugins:
+      pv_slider_images:
+        title: Imagenes Deslizantes
+#        article: masculino/femenino
+    pv_slider_images:
+      admin:
+        pv_slider_images:
+          actions:
+            create_new: Crear nuevo pv slider image
+            reorder: Reordenar pv slider images
+            reorder_done: Reordenación de pv slider images completada
+          records:
+            title: Pv Slider Images
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay pv slider images todavía. Pulsa en "Crear nuevo Pv Slider Image" para crear tu primer pv slider image.
+          pv_slider_image:
+            view_live_html: Ver este pv slider image como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este pv slider image
+            delete: Borrar este pv slider image para siempre
+      pv_slider_images:
+        show:
+          other: Otros pv slider images
+  activerecord:
+    attributes:
+      'refinery/pv_slider_images/pv_slider_image':
+        title: Title
+        description: Description
+        photo: Photo
+        satus: Satus

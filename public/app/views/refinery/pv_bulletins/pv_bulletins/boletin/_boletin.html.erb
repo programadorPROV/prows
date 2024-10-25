@@ -1,0 +1,24 @@
+
+<% @pv_bulletin.all.each do |boletin| %>
+	<div class="column_1 g_s1366_50p mar_b_4 pad_b_4_700_st pad_b_2_900_st">	
+		<div class="relative">
+			<!-- img -->
+			<%=link_to "", refinery.boletine_path(boletin.id), :class=> "bck_cover h15_240_st absolute_tl_700_st h100p_700_st w15_700_st w100p_900_st h15_900_st relative_900_st", style: "background-image: url('#{boletin.thumbnail.url}')"%>
+			<!-- content abstrack -->
+			<div class="pad_2_240_st text_container_news relative pad_l_15r_700_st pad_l_2_900_st">
+				
+				<div class="pad_l_2_700_st pad_l_0_900_st">
+					<!-- title news -->
+					<div class="abstrack fs_09 lh_1 mar_b_1">
+						<strong>
+							<%=link_to (raw boletin.description), refinery.boletine_path(boletin.id), {:style=>'color:#585859;'}%>
+						</strong>
+					</div>
+
+						<%=link_to boletin.title, refinery.boletine_path(boletin.id), :class=> "c_black bolder fs_15" %>
+				</div>
+
+			</div>
+		</div>
+	</div>
+<%end%>

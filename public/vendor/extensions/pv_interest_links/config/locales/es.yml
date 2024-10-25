@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      pv_interest_links:
+        title: Enlaces de interés
+#        article: masculino/femenino
+    pv_interest_links:
+      admin:
+        pv_interest_links:
+          actions:
+            create_new: Crear nuevo pv interest link
+            reorder: Reordenar pv interest links
+            reorder_done: Reordenación de pv interest links completada
+          records:
+            title: Pv Interest Links
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay pv interest links todavía. Pulsa en "Crear nuevo Pv Interest Link" para crear tu primer pv interest link.
+          pv_interest_link:
+            view_live_html: Ver este pv interest link como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este pv interest link
+            delete: Borrar este pv interest link para siempre
+      pv_interest_links:
+        show:
+          other: Otros pv interest links
+  activerecord:
+    attributes:
+      'refinery/pv_interest_links/pv_interest_link':
+        title: Title
+        link: Link
+        status: Status

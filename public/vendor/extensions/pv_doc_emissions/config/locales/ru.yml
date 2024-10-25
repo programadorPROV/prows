@@ -1,0 +1,31 @@
+ru:
+  refinery:
+    plugins:
+      pv_doc_emissions:
+        title: Pv Doc Emissions
+    pv_doc_emissions:
+      admin:
+        pv_doc_emissions:
+          actions:
+            create_new: Добавить Pv Doc Emission
+            reorder: Изменить порядок Pv Doc Emissions
+            reorder_done: Закончить изменять порядок Pv Doc Emissions
+          records:
+            title: Pv Doc Emissions
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Pv Doc Emissions" не найдено. Нажмите "Добавить Pv Doc Emission" чтобы создать pv doc emission.
+          pv_doc_emission:
+            view_live_html: Просмотреть pv doc emission вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать pv doc emission
+            delete: Удалить pv doc emission навсегда
+      pv_doc_emissions:
+        show:
+          other: Другие Pv Doc Emissions
+  activerecord:
+    attributes:
+      'refinery/pv_doc_emissions/pv_doc_emission':
+        title: Title
+        document: Document
+        url_doc: Url Doc
+        status: Status
+        refinery_pv_emission_id: Refinery Pv Emission

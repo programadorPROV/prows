@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="en" class="unselected" id="body_container">
+	<head>
+		<title><%=@page.title%> | Provalores</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<meta name="keywords" content="puesto de bolsa,puestos de bolsa,provalores,puesto de bolsa de nicaragua,puestos de bolsa de nicaragua,provalores puesto de bolsa,bolsa de valores,nicaragua,inversion,bolsa,valores,banpro,proval,maximizar ahorros,ahorros,operaciones,bursatil,bursatiles,custodia,boletas,financiamiento bursatil" />
+		<%= render "refinery/pages/shared/head"%>
+	</head>
+	<body class="ontop itsmoving bck_gray0 ">
+		<%= render "/refinery/pages/shared/header"%>
+		<div>
+
+			<div class="bck_h_100 relative" style="background-image: url(assets/servicios_cover.jpg);background-color: #f0f0f0;">
+				<div class="description_head max_w_100 mar_auto bck_cover pad_lr_5_900_st ">
+
+					<div class="midd_container h40_240_st h30_480_st w40_900_st w35_900_st pad_t_3_240_st pad_t_0_900_st intro_subpage">
+						<div class="midd_cell pad_2 z2">
+							
+							<div class="content_wrap">
+								<!-- title -->
+								<div class="title_subpage">
+									<%=raw @page.title%>
+								</div>
+
+								<div class="description_subpage body_text_2">
+									<%=raw @page.content_for(:body)%>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="row_lm">
+					<div class="">
+						<div class="content_wrap">
+							<div class="max_w_100 mar_auto">
+								<div class="column_container border_split">
+									<%=yield%>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<%= render "/refinery/pages/shared/footer"%>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114427481-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114427481-1');
+</script>
+
+	</body>
+</html> 

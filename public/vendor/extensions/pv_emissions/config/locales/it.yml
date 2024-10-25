@@ -1,0 +1,30 @@
+it:
+  refinery:
+    plugins:
+      pv_emissions:
+        title: Pv Emissions
+    pv_emissions:
+      admin:
+        pv_emissions:
+          actions:
+            create_new: Aggiungi Nuovo Pv Emission
+            reorder: Riordina Pv Emissions
+            reorder_done: Termina il Riordino di Pv Emissions
+          records:
+            title: Pv Emissions
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Pv Emissions. Clicca "Aggiungi Nuovo Pv Emission" per aggiungere il tuo primo pv emission.
+          pv_emission:
+            view_live_html: Guarda live questo pv emission <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo pv emission
+            delete: Rimuovi per sempre questo pv emission
+      pv_emissions:
+        show:
+          other: Altri Pv Emissions
+  activerecord:
+    attributes:
+      'refinery/pv_emissions/pv_emission':
+        title: Title
+        description: Description
+        photo: Photo
+        refinery_pv_category_id: Refinery Pv Category

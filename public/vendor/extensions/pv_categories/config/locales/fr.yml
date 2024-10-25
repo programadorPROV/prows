@@ -1,0 +1,31 @@
+fr:
+  refinery:
+    plugins:
+      pv_categories:
+        title: Pv Categories
+    pv_categories:
+      admin:
+        pv_categories:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Pv Category
+            reorder: Réordonner les Pv Categories
+            reorder_done: Fin de réordonnancement des Pv Categories
+          records:
+            title: Pv Categories
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Pv Category. Cliquer sur "Créer un(e) nouve(au/l/lle) Pv Category" pour créer votre premi(er/ère) pv category.'
+          pv_category:
+            view_live_html: Voir ce(t/tte) pv category <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) pv category
+            delete: Supprimer définitivement ce(t/tte) pv category
+      pv_categories:
+        show:
+          other: Autres Pv Categories
+  activerecord:
+    attributes:
+      'refinery/pv_categories/pv_category':
+        name: Name
+        description: Description
+        status: Status
+        type: Type
+        description_type: Description Type

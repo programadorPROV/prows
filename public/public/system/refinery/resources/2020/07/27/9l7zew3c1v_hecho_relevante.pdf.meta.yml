@@ -1,0 +1,4 @@
+---
+name: hecho relevante.pdf
+model_class: Refinery::Resource
+model_attachment: file

@@ -1,0 +1,33 @@
+zh-CN:
+  refinery:
+    plugins:
+      pv_services:
+        title: Pv Services
+    pv_services:
+      admin:
+        pv_services:
+          actions:
+            create_new: 建立新的 Pv Service
+            reorder: 对 Pv Services 重新排序
+            reorder_done: 对 Pv Services 的重新排序结束
+          records:
+            title: Pv Services
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Pv Services yet. Click "Add New Pv Service" to add your first pv service.
+            no_items_yet: 目前没有 Pv Services . 点击 "Add New Pv Service" 创建一个pv service.
+          pv_service:
+            view_live_html: 查看 pv service 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 pv service
+            delete: 永久删除 pv service
+      pv_services:
+        show:
+          other: 其他 Pv Services
+  activerecord:
+    attributes:
+      'refinery/pv_services/pv_service':
+        title: Title
+        description: Description
+        photo: Photo
+        status: Status
+        refinery_pv_category_id: Refinery Pv Category

@@ -1,0 +1,8 @@
+C:\Proyectos Provalores\AppWeb FAQ\wa_faq\wa_faq\bin\wa_faq.dll
+C:\Proyectos Provalores\AppWeb FAQ\wa_faq\wa_faq\bin\wa_faq.pdb
+C:\Proyectos Provalores\AppWeb FAQ\wa_faq\wa_faq\bin\wa_faq.xml
+C:\Proyectos Provalores\AppWeb FAQ\wa_faq\wa_faq\obj\Debug\wa_faq.Resources.resources
+C:\Proyectos Provalores\AppWeb FAQ\wa_faq\wa_faq\obj\Debug\wa_faq.vbproj.GenerateResource.Cache
+C:\Proyectos Provalores\AppWeb FAQ\wa_faq\wa_faq\obj\Debug\wa_faq.dll
+C:\Proyectos Provalores\AppWeb FAQ\wa_faq\wa_faq\obj\Debug\wa_faq.xml
+C:\Proyectos Provalores\AppWeb FAQ\wa_faq\wa_faq\obj\Debug\wa_faq.pdb

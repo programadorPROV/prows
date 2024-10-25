@@ -1,0 +1,32 @@
+tr:
+  refinery:
+    plugins:
+      pv_documents:
+        title: Pv Documents
+    pv_documents:
+      admin:
+        pv_documents:
+          actions:
+            create_new: Yeni Ekle Pv Document
+            reorder: Tekrar sirala Pv Documents
+            reorder_done: Tekrar siralama tamamlandiPv Documents
+          records:
+            title: Pv Documents
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Pv Documents yok henuz.  Tikla "Yeni Ekle Pv Document" eklemek senin ilk pv document.
+          pv_document:
+            view_live_html: Bunu canlu pv document goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle pv document
+            delete: Bunu Sil pv document sonsuza dek
+      pv_documents:
+        show:
+          other: Diger Pv Documents
+  activerecord:
+    attributes:
+      'refinery/pv_documents/pv_document':
+        title: Title
+        description: Description
+        status: Status
+        creation_date: Creation Date
+        file_url: File Url
+        refinery_pv_category_id: Refinery Pv Category

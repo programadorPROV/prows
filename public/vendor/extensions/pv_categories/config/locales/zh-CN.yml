@@ -1,0 +1,33 @@
+zh-CN:
+  refinery:
+    plugins:
+      pv_categories:
+        title: Pv Categories
+    pv_categories:
+      admin:
+        pv_categories:
+          actions:
+            create_new: 建立新的 Pv Category
+            reorder: 对 Pv Categories 重新排序
+            reorder_done: 对 Pv Categories 的重新排序结束
+          records:
+            title: Pv Categories
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Pv Categories yet. Click "Add New Pv Category" to add your first pv category.
+            no_items_yet: 目前没有 Pv Categories . 点击 "Add New Pv Category" 创建一个pv category.
+          pv_category:
+            view_live_html: 查看 pv category 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 pv category
+            delete: 永久删除 pv category
+      pv_categories:
+        show:
+          other: 其他 Pv Categories
+  activerecord:
+    attributes:
+      'refinery/pv_categories/pv_category':
+        name: Name
+        description: Description
+        status: Status
+        type: Type
+        description_type: Description Type

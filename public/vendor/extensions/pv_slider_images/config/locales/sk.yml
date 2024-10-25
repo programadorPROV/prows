@@ -1,0 +1,30 @@
+sk:
+  refinery:
+    plugins:
+      pv_slider_images:
+        title: Pv Slider Images
+    pv_slider_images:
+      admin:
+        pv_slider_images:
+          actions:
+            create_new: Pridať Pv Slider Image
+            reorder: Preusporiadať Pv Slider Images
+            reorder_done: Koniec radenia Pv Slider Images
+          records:
+            title: Pv Slider Images
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Pv Slider Images. Kliknite na "Pridať Pv Slider Image" pre pridanie prvého pv slider image.
+          pv_slider_image:
+            view_live_html: Zobraziť náhľad pv slider image<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť pv slider image
+            delete: Zmazať pv slider image
+      pv_slider_images:
+        show:
+          other: Daľšie Pv Slider Images
+  activerecord:
+    attributes:
+      'refinery/pv_slider_images/pv_slider_image':
+        title: Title
+        description: Description
+        photo: Photo
+        satus: Satus

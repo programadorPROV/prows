@@ -1,0 +1,16 @@
+current directory: /home/www/vhosts/provalores.com.ni/httpdocs/public/vendor/bundle/ruby/2.4.0/gems/eventmachine-1.2.5/ext/fastfilereader
+/opt/plesk/ruby/2.4.3/bin/ruby -r ./siteconf20180413-8182-w4nmt2.rb extconf.rb
+creating Makefile
+
+current directory: /home/www/vhosts/provalores.com.ni/httpdocs/public/vendor/bundle/ruby/2.4.0/gems/eventmachine-1.2.5/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /home/www/vhosts/provalores.com.ni/httpdocs/public/vendor/bundle/ruby/2.4.0/gems/eventmachine-1.2.5/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.so
+
+current directory: /home/www/vhosts/provalores.com.ni/httpdocs/public/vendor/bundle/ruby/2.4.0/gems/eventmachine-1.2.5/ext/fastfilereader
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20180413-8182-1ocd4fm

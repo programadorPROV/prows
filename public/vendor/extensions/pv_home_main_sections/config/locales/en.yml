@@ -1,0 +1,29 @@
+en:
+  refinery:
+    plugins:
+      pv_home_main_sections:
+        title: Broadcast
+    pv_home_main_sections:
+      admin:
+        pv_home_main_sections:
+          actions:
+            create_new: Add New Pv Home Main Section
+            reorder: Reorder Pv Home Main Sections
+            reorder_done: Done Reordering Pv Home Main Sections
+          records:
+            title: Pv Home Main Sections
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Pv Home Main Sections yet. Click "Add New Pv Home Main Section" to add your first pv home main section.
+          pv_home_main_section:
+            view_live_html: View this pv home main section live <br/><em>(opens in a new window)</em>
+            edit: Edit this pv home main section
+            delete: Remove this pv home main section forever
+      pv_home_main_sections:
+        show:
+          other: Other Pv Home Main Sections
+  activerecord:
+    attributes:
+      'refinery/pv_home_main_sections/pv_home_main_section':
+        title: Title
+        photo: Photo
+        description: Description

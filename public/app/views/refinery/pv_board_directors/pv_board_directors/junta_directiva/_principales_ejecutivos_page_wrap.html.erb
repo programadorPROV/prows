@@ -1,0 +1,49 @@
+<div class="content_wrap bck_white max_w_100">
+	<div class="pad_t_4_240_st pad_t_0_900_st">
+		<div class="pad_tb_2">
+
+			<!-- indice -->
+			<%= render "refinery/pages/shared/indice"%>
+
+			<!-- container page wrap -->
+			<div class="pad_b_2">
+				<div class="column_container pad_b_1 executive pad_lr_1024_remove_divs ">
+				<!-- jun_dir -->
+				<!-- prin_eje -->
+					<% @pv_board_directors.each do |pv_board_director| %>
+						<div class="column_1 g_s1024_33p pad_tb_0_1024_st pad_lr_2_1024_st mar_tb_3">
+							<div class="relative pad_l_10_700_st pad_l_0_1024_st block_divs">
+								<!-- image -->
+								<div href="" class="profile_pic_container h10_240_st h10_1024_st h100p_700_st absolute_tl_700_st relative_1024_st w10_700_st w100p_1024_st relative_240_st">
+									<div class="absolute_default wh100p only_240 to_700 only_1024 bck_cover", style="background-image: url('/assets/principales_ejecutivos.jpg');"></div>
+									<div class="profile_pic absolute wh8 bck_cover circle top_5 left_0 right_0 mar_auto z1" style="background-image: url('<%=pv_board_director.photo.url%>');"></div>
+								</div>
+								<!-- body text -->
+								<div href="" class="pad_t_5_240_st pad_t_0_700_st pad_l_2_700_st pad_l_0_1024_st pad_t_5_1024_st body_text_2">
+									<!-- nombre -->
+									<div class="c_green_1 bolder fs_14">
+										<%=pv_board_director.name%> <%=pv_board_director.last_name%>
+									</div>
+									<!-- cargo -->
+									<div class="body_text_2">
+										<%=pv_board_director.position%>	
+									</div>
+									<!-- contact -->
+									<!--
+									<a href="" class="inline_divs pad_t_1 v_bottom_all" target="_blank">
+										<img src="/assets/logo_linkedin_full.svg" alt="" class="w6">
+										<span class="pad_lr_05 lh_1 c_green_2 fs_12 italic bolder">
+											<%=pv_board_director.linked_in_tag%>
+										</span>
+									</a> -->
+								</div>
+							</div>
+						</div>
+					<% end %>
+				</div>
+			</div>
+		</div>
+		<%= render "/refinery/pages/shared/main_blocks"%>
+	</div>
+</div>
+

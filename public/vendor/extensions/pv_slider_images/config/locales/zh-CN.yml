@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      pv_slider_images:
+        title: Pv Slider Images
+    pv_slider_images:
+      admin:
+        pv_slider_images:
+          actions:
+            create_new: 建立新的 Pv Slider Image
+            reorder: 对 Pv Slider Images 重新排序
+            reorder_done: 对 Pv Slider Images 的重新排序结束
+          records:
+            title: Pv Slider Images
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Pv Slider Images yet. Click "Add New Pv Slider Image" to add your first pv slider image.
+            no_items_yet: 目前没有 Pv Slider Images . 点击 "Add New Pv Slider Image" 创建一个pv slider image.
+          pv_slider_image:
+            view_live_html: 查看 pv slider image 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 pv slider image
+            delete: 永久删除 pv slider image
+      pv_slider_images:
+        show:
+          other: 其他 Pv Slider Images
+  activerecord:
+    attributes:
+      'refinery/pv_slider_images/pv_slider_image':
+        title: Title
+        description: Description
+        photo: Photo
+        satus: Satus

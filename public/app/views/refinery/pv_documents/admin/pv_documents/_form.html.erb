@@ -1,0 +1,55 @@
+<%= form_for [refinery, :pv_documents_admin, @pv_document] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @pv_document,
+              :include_object_name => true %>
+
+  <%= render '/refinery/admin/locale_picker',
+              :current_locale => Globalize.locale %>
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "pv_documents/pv_document" -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :status -%>
+    <%= f.check_box :status, :checked => @pv_document[:status] -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :creation_date -%>
+    <%= f.date_select :creation_date, :order => [:day, :month, :year], :start_year => 2000, :end_year => Time.now.year-%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :file_url -%>
+    <%= render '/refinery/admin/resource_picker',
+               :f => f,
+               :field => :file_url_id,
+               :resource => @pv_document.file_url -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :refinery_pv_category_id -%>
+    <%= f.collection_select :refinery_pv_category_id, Refinery::PvCategories::PvCategory.where(:type_name => :doc_fin), :id, :name,  :prompt => t('select')  %>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.pv_documents.admin.pv_documents.pv_document'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @pv_document.title) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

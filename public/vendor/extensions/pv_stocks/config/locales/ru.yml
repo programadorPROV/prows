@@ -1,0 +1,35 @@
+ru:
+  refinery:
+    plugins:
+      pv_stocks:
+        title: Pv Stocks
+    pv_stocks:
+      admin:
+        pv_stocks:
+          actions:
+            create_new: Добавить Pv Stock
+            reorder: Изменить порядок Pv Stocks
+            reorder_done: Закончить изменять порядок Pv Stocks
+          records:
+            title: Pv Stocks
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Pv Stocks" не найдено. Нажмите "Добавить Pv Stock" чтобы создать pv stock.
+          pv_stock:
+            view_live_html: Просмотреть pv stock вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать pv stock
+            delete: Удалить pv stock навсегда
+      pv_stocks:
+        show:
+          other: Другие Pv Stocks
+  activerecord:
+    attributes:
+      'refinery/pv_stocks/pv_stock':
+        name: Name
+        ticker: Ticker
+        market: Market
+        min_cor: Min Cor
+        average_cor: Average Cor
+        max_cor: Max Cor
+        min_usd: Min Usd
+        average_usd: Average Usd
+        max_usd: Max Usd

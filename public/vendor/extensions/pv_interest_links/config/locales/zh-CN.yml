@@ -1,0 +1,31 @@
+zh-CN:
+  refinery:
+    plugins:
+      pv_interest_links:
+        title: Pv Interest Links
+    pv_interest_links:
+      admin:
+        pv_interest_links:
+          actions:
+            create_new: 建立新的 Pv Interest Link
+            reorder: 对 Pv Interest Links 重新排序
+            reorder_done: 对 Pv Interest Links 的重新排序结束
+          records:
+            title: Pv Interest Links
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Pv Interest Links yet. Click "Add New Pv Interest Link" to add your first pv interest link.
+            no_items_yet: 目前没有 Pv Interest Links . 点击 "Add New Pv Interest Link" 创建一个pv interest link.
+          pv_interest_link:
+            view_live_html: 查看 pv interest link 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 pv interest link
+            delete: 永久删除 pv interest link
+      pv_interest_links:
+        show:
+          other: 其他 Pv Interest Links
+  activerecord:
+    attributes:
+      'refinery/pv_interest_links/pv_interest_link':
+        title: Title
+        link: Link
+        status: Status

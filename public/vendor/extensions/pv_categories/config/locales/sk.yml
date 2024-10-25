@@ -1,0 +1,31 @@
+sk:
+  refinery:
+    plugins:
+      pv_categories:
+        title: Pv Categories
+    pv_categories:
+      admin:
+        pv_categories:
+          actions:
+            create_new: Pridať Pv Category
+            reorder: Preusporiadať Pv Categories
+            reorder_done: Koniec radenia Pv Categories
+          records:
+            title: Pv Categories
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Pv Categories. Kliknite na "Pridať Pv Category" pre pridanie prvého pv category.
+          pv_category:
+            view_live_html: Zobraziť náhľad pv category<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť pv category
+            delete: Zmazať pv category
+      pv_categories:
+        show:
+          other: Daľšie Pv Categories
+  activerecord:
+    attributes:
+      'refinery/pv_categories/pv_category':
+        name: Name
+        description: Description
+        status: Status
+        type: Type
+        description_type: Description Type

@@ -1,0 +1,4 @@
+---
+name: carta-hecho-relevante-firma-bom.pdf
+model_class: Refinery::Resource
+model_attachment: file

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48655403-1', 'provalores.com.ni');
+  ga('send', 'pageview');
+
+</script>
+    <head>
+        <title>Provalores - Puesto de Bolsa</title>
+		<meta name="keywords" content="puesto de bolsa,puestos de bolsa,provalores,puesto de bolsa de nicaragua,puestos de bolsa de nicaragua,provalores puesto de bolsa,bolsa de valores,nicaragua,inversion,bolsa,valores,banpro,proval,maximizar ahorros,ahorros,operaciones,bursatil,bursatiles,custodia,boletas,financiamiento bursatil" /> 
+        <meta name="Description" content="Puesto de Bolsa Autorizado" /> 
+		<meta http-equiv="Content-Language" content="es"/> 
+		<meta name="distribution" content="global"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="alternate" hreflang="es-NI" href="http://www.provalores.com.ni" /> 
+        <!--detecting devices/removing zoom-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+		<!--link rel="stylesheet" type="text/css" href="css/preloader.css"/-->
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<!-- <link rel="stylesheet" type="text/css" href="css/animations.css" /> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/fonts.css" /> -->
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link rel="stylesheet" href="css/slider.css" type="text/css" media="screen" />
+		<!-- jquery librery 
+	    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	    <!-- feeds -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.zrssfeed.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript">
+			function nav(){
+				var nav = navigator.appName;
+
+				if(nav == "Microsoft Internet Explorer"){					
+					var ie = navigator.userAgent.toLowerCase();					
+					var version = parseInt(ie.split('msie')[1]);					
+					switch(version){
+					case 6:
+						alert("Estas usando IE 6, es obsoleto");
+						break;
+					case 7:
+						alert("Estas usando IE 7, es obsoleto");
+						break;
+					case 8:
+						alert("Estas usando IE 8, es obsoleto");
+						break;
+					case 9:
+						alert("Estas usando IE 9, mas o menos compatible");
+						break;
+					default:
+						alert("Usas una version compatible");
+						break;
+					}
+					}
+					}
+			function Redirect (url) {
+				var ua        = navigator.userAgent.toLowerCase(),
+					isIE      = ua.indexOf('msie') !== -1,
+					version   = parseInt(ua.substr(4, 2), 10);
+					
+					if (isIE){ version = parseInt(ua.split('msie')[1]);}					
+
+				// Internet Explorer 8 and lower
+				if (isIE && version < 9) {					
+					var link = document.createElement('a');
+					link.href = url;
+					document.body.appendChild(link);
+					link.click();
+				}
+
+				// All other browsers
+				//else { window.location.href = url; }
+				}
+			
+			function openDialog() {
+				$('#overlay').fadeIn('fast', function() {
+					$('#popup').css('display','block');
+					$('#popup').animate({'left':'30%'},500);
+				});
+				}
+
+			function closeDialog(id) {
+				$('#'+id).css('position','absolute');
+				$('#'+id).animate({'left':'-100%'}, 500, function() {
+					$('#'+id).css('position','fixed');
+					$('#'+id).css('left','100%');
+					$('#overlay').fadeOut('fast');
+				});
+				}
+				
+			function processOnChange() {
+				var vCurrSel  = document.ExchangeRate.Currency.selectedIndex;
+				var vCurrency = document.ExchangeRate.Currency.options[vCurrSel].value;
+				var vitmDiv1  = document.getElementById("840");
+				var vitmDiv2  = document.getElementById("978");
+
+				if(vCurrency == "840") {
+				  vitmDiv2.style.visibility = "hidden";
+				  vitmDiv1.style.visibility = "visible";
+				}else{
+					vitmDiv1.style.visibility = "hidden";
+					vitmDiv2.style.visibility = "visible";
+				}
+				}
+		$(document).ready(function () {
+			// internacionales
+			$('#internacionales').rssfeed('http://es-us.finanzas.yahoo.com/noticias/categoria-internacional/?format=rss',{
+				limit: 2,
+				date: false,
+				header:false,
+				content: false,
+				titletag: 'div',
+				linktarget: '_blank'
+			});
+			// empresas
+			$('#empresas').rssfeed('http://es-us.finanzas.yahoo.com/noticias/categoria-empresas/?format=rss',{
+				limit: 1,
+				date: false,
+				header:false,
+				content: false,
+				titletag: 'div',
+				linktarget: '_blank'
+			});
+			// materias primas
+			$('#materias_primas').rssfeed('http://es-us.finanzas.yahoo.com/noticias/categoria-materias-primas/?format=rss',{
+				limit: 1,
+				date: false,
+				header:false,
+				content: false,
+				titletag: 'div',
+				linktarget: '_blank'
+			});
+			// acciones
+			$('#acciones').rssfeed('http://es-us.finanzas.yahoo.com/noticias/categoria-acciones/?format=rss',{
+				limit: 1,
+				date: false,
+				header:false,
+				content: false,
+				titletag: 'div',
+				linktarget: '_blank'
+			});					
+		});
+		</script>
+		
+				<script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '380',
+          width: '675',
+          videoId: 'pEWdtA7T0ig',
+		  playerVars:{'border':0, 'wmode':'transparent', 'autohide': 0, 'controls':0, 'showinfo':1, 'modestbranding':1, 'rel': 0, 'loop':0, 'fs':1},
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          //setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+	  
+	  
+	  $('#overlay').modal('show');
+    </script>
+	    <!-- valores -->
+	    <script type="text/javascript" src="js/indices.js"></script>
+		<style>
+			.gcw_main3314816299{width:220px;font-family:Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;font-size:11px;border:#72B42D 1px solid;text-align:center;color:#ffffff;background-color:#285C00;margin:0 auto;}
+			.gcw_header3314816299{margin:4px;padding:5px;text-align:center;border:#3F7506 1px solid;background-color:#3A8104;}
+			#ccw_cnhfybwf3314816299{text-decoration:none;color:#FFFFFF;font-size:13px;font-weight:bold;}
+			input.gcw_input3314816299{color:#ffffff;font-weight:bold;background-color:#285C00;border:#72B42D 1px solid;text-align:right;padding:2px 0;margin:1px 0;display:inline;font-size:11px;}
+			.gcw_select3314816299{color:#000;display:inline;}
+			#gcw_date3314816299{font-size:10px;color:#ffffff;}
+		</style>
+		
+		<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '863036500492465');
+fbq('track', "PageView");
+fbq('track', 'ViewContent');</script>
+
+
+
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=863036500492465&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+	</head>
+	<body onload="Redirect('navegadores.html');">
+	<!--<body  >-->
+	<!--	<div id="overlay" class="overlay"></div>
+			<div id="popup" class="popup">	
+				<a onclick="closeDialog('popup');" class="close"></a>
+				<div>
+					<a href=""><img src="images/diapositiva.jpg" data-thumb="images/diapositiva.jpg" alt="" /></a>
+				</div>
+			</div>
+	-->	
+	
+	
+	
+	
+	<!--<a href="#openModal">1 solo ingreso</a>
+	<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<div>
+			<a href=""><img src="images/diapositiva.jpg" data-thumb="images/diapositiva.jpg" alt="" /></a>
+		</div>
+	</div>	
+	</div>-->	
+
+		<div class="wrapper">
+			<div class="header">
+				<!-- social network -->
+				<div class="social-network">
+					<a href="https://www.facebook.com/banpronicaragua" target="_blank"><img src="images/rs/Facebook.jpg" alt="facebook"></a>
+					<a href="https://twitter.com/banpronicaragua" target="_blank"><img src="images/rs/twitter.jpg" alt="twitter"></a>
+					<a href="https://instagram.com/banpronicaragua/" target="_blank"><img src="images/rs/Instagram.jpg" alt="instagram"></a>
+					<a href="https://www.youtube.com/user/BanproNicaragua" target="_blank"><img src="images/rs/YouTube.jpg" alt="youtube"></a>
+					<a href="http://www.linkedin.com/company/banpro-nicaragua" target="_blank"><img src="images/rs/LinkedIn.jpg" alt="linkedin"></a>
+					<a href="https://storify.com/banpronicaragua" target="_blank"><img src="images/rs/Storify.jpg" alt="storify"></a>
+					<a href="http://blog.banpro.com.ni/" target="_blank"><img src="images/rs/Blog-Banpro.jpg" alt="blog"></a>
+				</div>
+				<!-- logo -->
+				<div class="brand">
+					<a href="index.html"><img src="images/logo.gif" alt="Promerica" width="222" height="84" /></a>
+					<img src="images/country.gif" width="144" height="65" alt="country"/>
+				</div>
+				<!-- navigation -->
+				<div class="nav">
+					<ul id="nav">
+						<li>
+							<a href="empresa.html">Empresa</a>
+							<ul>
+								<li><a href="empresa.html">Empresa</a></li>
+								<li><a href="mision-vision.html">Mision y Vision</a></li>
+								<li><a href="junta-directiva.html">Junta directiva</a></li>
+								<li><a href="principales_ejecutivos.html">Principales Ejecutivos</a></li>
+								<li><a href="estado_de_cuentas_auditados.html">Información Financieros</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="servicios.html">Servicios</a>
+						</li>
+						<li>
+							<a href="emisiones.html">Emisiones</a>
+							<ul>
+								<li class="hidden"><a href="emisiones_propias.html">Emisiones Propias</a></li>
+								<li><a href="emisiones_del_mercado.html">Emisiones del Mercado</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="bolsa.html">Bolsa</a>
+							<ul>
+								<li><a href="aprenda_el_mercado.html">Aprenda el mercado bursatil </a></li>
+								<li><a href="conviertase_en_inversionista.html">Conviertase en un inversionista</a></li>
+								<li><a href="operaciones.html">Realizando las operaciones</a></li>
+								<li><a href="custodiando_su_inversion.html">Custodiando su inversion</a></li>
+								<li><a href="maximiza_tu_rendimiento.html">Maximiza tus ahorros</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="herramientas.html">Herramientas</a>
+							<ul>
+								<li><a href="principales_indices_mundo.html">Principales indicadores</a></li>
+								<li><a href="divisas.html">Otros Índices</a></li>
+								<li><a href="preguntas_frecuentes.html">Preguntas frecuentes</a></li>
+								<li><a href="enlaces_de_interes.html">Enlaces de interes</a></li>
+								<li><a href="noticias_feed.html">Noticias bursátiles</a></li>
+							</ul>
+						</li>
+			        </ul>
+				</div>
+			</div>
+			<!-- body -->
+			<div class="content-wrap">
+				<!-- left -->
+				<div class="sidebar">
+					<!-- login -->
+					<div class="login background-login">
+						<a href="http://cenival.com/cenival/auth/login" target="_blank"></a>
+						<!-- <div class="top"><img src="images/login_top.gif" alt=""></div>
+						<a href="#" class="button-login"></a> -->
+					</div>
+					<!-- principales valores -->
+					<div id="entrar-wrap3" class="login background-login2">
+					<a href="https://www.banpro.com.ni/qs_GrupoPromerica.asp" target="_self"><img src="images/img_ContactoIndex4.jpg" width="215" height="108" alt="" style="margin-left:5px; margin-bottom:0px; border:none;" /></a></div>
+					  
+					  <!--Currency Converter widget by FreeCurrencyRates.com 
+					<div class='gcw_main2984806976'><div class='gcw_header2984806976'><a href='http://www.freecurrencyrates.com/es/myconverter#cur=EUR-USD-NIO;src=Yahoo%20Finance;amt=EUR1' id='ccw_cnhfybwf2984806976'>Conversor de divisas</a></div><div id='gcw_rates2984806976'></div><script src='http://www.freecurrencyrates.com/converter-widget?source=Yahoo%20Finance&width=215&currs=EUR,USD,NIO&precision=2&language=es&flags=0&currchangable=0&firstrowvalue=1&id=2984806976' charset='UTF-8'></script></div>
+					<!--End of Currency Converter widget by FreeCurrencyRates.com -->
+				
+					<!-- contact -->
+					<div class="contacto">
+						<div class="title">Centro Corporativo BANPRO</div>
+						<br/>
+						<div>
+							<div class="name">Atencion al Cliente<span>Ext. 39442</span><br/><span>33027</span></div>
+							<div><a href="mailto:info@provalores.com.ni" target="_blank">info@provalores.com.ni</a></div>
+						</div>
+					</div>
+				</div>
+				<!-- right -->
+				<div class="content-body">
+					<!-- slider -->
+					<div class="slider">
+						<div id="wrapper">
+					        <div class="slider-wrapper theme-default">
+					            <div id="slider" class="nivoSlider">
+					                <a href="noticias_feed.html#indicador"><img src="images/slider/ssumma.jpg" data-thumb="images/slider/ssumma.jpg" alt="" /></a>
+									<a href="emisiones_del_mercado.html#banpro"><img src="images/slider/emision_banpro.jpg" data-thumb="images/slider/emision_banpro.jpg" alt="" /></a>
+									<a href="aprenda_el_mercado.html"><img src="images/slider/aprenda_mb.jpg"  data-thumb="images/slider/aprenda_mb" alt=""/></a>
+					                <a href="conviertase_en_inversionista.html"><img src="images/slider/conviertase.jpg" data-thumb="images/slider/conviertase.jpg" alt=""/></a>
+					                <a href="operaciones.html"><img src="images/slider/operaciones.jpg" data-thumb="images/slider/operaciones.jpg" alt="" /></a>
+					                <a href="custodiando_su_inversion.html"><img src="images/slider/custodiando.jpg" data-thumb="images/slider/custodiando.jpg" alt="" /></a>
+					                <a href="maximiza_tu_rendimiento.html"><img src="images/slider/costos.jpg" data-thumb="images/slider/costos.jpg" alt="" /></a>
+					                <!-- <a href=""><img src="images/slider/nemo.jpg" data-thumb="images/nemo.jpg" alt="" title="#htmlcaption" /></a> -->
+					            </div>
+					            <!-- <div id="htmlcaption" class="nivo-html-caption">
+					                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+					            </div> -->
+					        </div>
+
+					    </div>
+					    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+					    <script type="text/javascript">
+					    $(window).load(function() {
+					        $('#slider').nivoSlider();
+					    });
+					    </script>
+					</div>
+					<!-- news -->
+					<div id="player"></div>
+					<div class="block3 news">
+						<div>
+							<div class="title">Provalores, S.A</div>
+							<a href="empresa.html" class="justificado">Puesto de Bolsa autorizado para operar por la Bolsa de Valores de Nicaragua, con veintidós años de experiencia en el mercado bursátil y como miembro del grupo financiero Banpro</a>
+						</div>
+						<div class="cut-link">
+							<div class="title">noticias</div>
+							<div id="internacionales"></div>
+							<div id="empresas"></div>
+							<div id="materias_primas"></div>
+							<div id="acciones"></div>
+						</div>
+						<div class="links-logo">
+							<div class="title">Enlaces de Interes</div>
+							<a href="http://www.superintendencia.gob.ni/" target="_blank" title="Superintendencia de Bancos y Otras Instituciones">
+								<div class="logo-container"><img src="images/siboif_logo.jpg" alt=""></div>
+								<div class="description-logo">SIBOIF</div>
+							</a>
+							<a href="http://www.bcn.gob.ni/" target="_blank" title="Banco Central de Nicaragua">
+								<div class="logo-container"><img src="images/bcn_logo.jpg" alt=""></div>
+								<div class="description-logo">BCN</div>
+							</a>
+							<a href="http://www.bolsanic.com/" target="_blank" title="Bolsa de Valores de Nicaragua">
+								<div class="logo-container"><img src="images/bolsanic_logo.jpg" alt=""></div>
+								<div class="description-logo">Bolsanic</div>
+							</a>
+							<a href="http://www.hacienda.gob.ni/" target="_blank" title=" Ministerio de Hacienda y Crédito Público">
+								<div class="logo-container"><img src="images/mhcp_logo.jpg" alt=""></div>
+								<div class="description-logo">MHCP</div>
+							</a>
+						</div>
+					</div>
+					<!-- products -->
+					<div class="block3 products">
+						<div>
+							<div class="title">Emisión BANPRO</div>
+							<br/>
+							<a href="emisiones_del_mercado.html#banpro" class="pic-products"><img src="images/banpro_prospecto.GIF" alt="emision banpro"></a>
+							<a href="emisiones_del_mercado.html#banpro" class="more"></a>
+						</div>
+						<div class="border-both">
+							<div class="title">Financiamiento Bursatil</div>
+							<br/>
+							<a href="aprenda_el_mercado.html#instrumentos_de_emison" class="pic-products"><img src="images/financiamiento.jpg" alt="finnaciamiento"></a>
+							<a href="aprenda_el_mercado.html#instrumentos_de_emison" class="more"></a>
+						</div>
+						<div>
+							<div class="title">mercado internacional</div>
+							<br/>
+							<a href="mercado_internacional.html" class="pic-products"><img src="images/product-minternacional2.jpg" alt="Mercado Internacional"></a>
+							<a href="mercado_internacional.html" class="more"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- footer -->
+			<div class="footer links-underline">
+				<div id="footer-text">©2016 Grupo Promerica 
+				<a href="https://www.banpro.com.ni/Solicitud_Empleo/AD_SolEmpleo.asp" target="_blank">Oportunidades de Empleo</a>	
+					<a href="#">
+						<img src="images/footer-logo.gif" alt="Promerica" border="0"/>
+					</a>						
+				</br>
+				<a style="font-size: 10px; margin-left: 10px;" href="navegadores.html">Para una mejor experiencia actualice desde aquí su navegador.</a>
+				</div>															
+				<div style="clear:both"></div>
+			</div>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+en:
+  refinery:
+    plugins:
+      pv_interest_links:
+        title: Pv Interest Links
+    pv_interest_links:
+      admin:
+        pv_interest_links:
+          actions:
+            create_new: Add New Pv Interest Link
+            reorder: Reorder Pv Interest Links
+            reorder_done: Done Reordering Pv Interest Links
+          records:
+            title: Pv Interest Links
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Pv Interest Links yet. Click "Add New Pv Interest Link" to add your first pv interest link.
+          pv_interest_link:
+            view_live_html: View this pv interest link live <br/><em>(opens in a new window)</em>
+            edit: Edit this pv interest link
+            delete: Remove this pv interest link forever
+      pv_interest_links:
+        show:
+          other: Other Pv Interest Links
+  activerecord:
+    attributes:
+      'refinery/pv_interest_links/pv_interest_link':
+        title: Title
+        link: Link
+        status: Status

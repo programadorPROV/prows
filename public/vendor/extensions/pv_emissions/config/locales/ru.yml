@@ -1,0 +1,30 @@
+ru:
+  refinery:
+    plugins:
+      pv_emissions:
+        title: Pv Emissions
+    pv_emissions:
+      admin:
+        pv_emissions:
+          actions:
+            create_new: Добавить Pv Emission
+            reorder: Изменить порядок Pv Emissions
+            reorder_done: Закончить изменять порядок Pv Emissions
+          records:
+            title: Pv Emissions
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Pv Emissions" не найдено. Нажмите "Добавить Pv Emission" чтобы создать pv emission.
+          pv_emission:
+            view_live_html: Просмотреть pv emission вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать pv emission
+            delete: Удалить pv emission навсегда
+      pv_emissions:
+        show:
+          other: Другие Pv Emissions
+  activerecord:
+    attributes:
+      'refinery/pv_emissions/pv_emission':
+        title: Title
+        description: Description
+        photo: Photo
+        refinery_pv_category_id: Refinery Pv Category

@@ -1,0 +1,51 @@
+<% content_for :body_content_title do %>
+  <%= @pv_category.name %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @pv_category.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @pv_category.description %>
+    </p>
+  </section>
+  <section>
+    <h1>Status</h1>
+    <p>
+      <%=raw @pv_category.status %>
+    </p>
+  </section>
+  <section>
+    <h1>Type</h1>
+    <p>
+      <%=raw @pv_category.type_name %>
+    </p>
+  </section>
+  <section>
+    <h1>Description Type</h1>
+    <p>
+      <%=raw @pv_category.description_type %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="pv_categories">
+      <% @pv_categories.each do |pv_category| %>
+        <li>
+          <%= link_to pv_category.name, refinery.pv_categories_pv_category_path(pv_category) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

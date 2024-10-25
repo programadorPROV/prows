@@ -1,0 +1,30 @@
+tr:
+  refinery:
+    plugins:
+      pv_slider_images:
+        title: Pv Slider Images
+    pv_slider_images:
+      admin:
+        pv_slider_images:
+          actions:
+            create_new: Yeni Ekle Pv Slider Image
+            reorder: Tekrar sirala Pv Slider Images
+            reorder_done: Tekrar siralama tamamlandiPv Slider Images
+          records:
+            title: Pv Slider Images
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Pv Slider Images yok henuz.  Tikla "Yeni Ekle Pv Slider Image" eklemek senin ilk pv slider image.
+          pv_slider_image:
+            view_live_html: Bunu canlu pv slider image goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle pv slider image
+            delete: Bunu Sil pv slider image sonsuza dek
+      pv_slider_images:
+        show:
+          other: Diger Pv Slider Images
+  activerecord:
+    attributes:
+      'refinery/pv_slider_images/pv_slider_image':
+        title: Title
+        description: Description
+        photo: Photo
+        satus: Satus

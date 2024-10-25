@@ -1,0 +1,29 @@
+cs:
+  refinery:
+    plugins:
+      pv_home_main_sections:
+        title: Pv Home Main Sections
+    pv_home_main_sections:
+      admin:
+        pv_home_main_sections:
+          actions:
+            create_new: Přidat Pv Home Main Section
+            reorder: Řadit Pv Home Main Sections
+            reorder_done: Konec řazení Pv Home Main Sections
+          records:
+            title: Pv Home Main Sections
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Pv Home Main Sections. Zvolte "Přidat Pv Home Main Section" pro přidání prvního pv home main section.
+          pv_home_main_section:
+            view_live_html: Zobrazit náhled pv home main section<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit pv home main section
+            delete: Smazat pv home main section
+      pv_home_main_sections:
+        show:
+          other: Další Pv Home Main Sections
+  activerecord:
+    attributes:
+      'refinery/pv_home_main_sections/pv_home_main_section':
+        title: Title
+        photo: Photo
+        description: Description

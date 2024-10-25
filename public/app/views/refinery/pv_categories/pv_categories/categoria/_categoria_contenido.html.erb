@@ -1,0 +1,28 @@
+<div class="row_lm">
+<div class="">
+<div class="content_wrap">
+<div class="max_w_100 mar_auto">
+<div class="column_container border_split">
+	<% @pv_categories.each do |category| %>
+
+		<div class="column_1 g_s1024_33p mar_tb_3 pad_lr_3_1024_st">
+			<div class="relative pad_l_15r_700_st pad_l_0_1024_st block_divs">
+				<!-- title -->
+				<a href="" class="pad_b_1_240_st pad_l_2_700_st pad_l_0_1024_st fs_12 c_green_2 bolder">
+					<%=category.name%>
+				</a>
+				<!-- image -->
+				<a href="" class="h10_240_st h10_1024_st h15_1366_st h100p_700_st bck_gray2 absolute_tl_700_st relative_1024_st w15_700_st w100p_1024_st bck_cover"></a>
+				<!-- body text -->
+				<a href="" class="pad_t_1_240_st pad_l_2_700_st pad_l_0_1024_st pad_t_2_1024_st body_text_2">
+					<%=category.description.html_safe%>
+				</a>
+			</div>
+		</div>
+
+	<% end %>
+</div>
+</div>
+</div>
+</div>
+</div>

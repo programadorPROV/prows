@@ -1,0 +1,35 @@
+it:
+  refinery:
+    plugins:
+      pv_stocks:
+        title: Pv Stocks
+    pv_stocks:
+      admin:
+        pv_stocks:
+          actions:
+            create_new: Aggiungi Nuovo Pv Stock
+            reorder: Riordina Pv Stocks
+            reorder_done: Termina il Riordino di Pv Stocks
+          records:
+            title: Pv Stocks
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Pv Stocks. Clicca "Aggiungi Nuovo Pv Stock" per aggiungere il tuo primo pv stock.
+          pv_stock:
+            view_live_html: Guarda live questo pv stock <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo pv stock
+            delete: Rimuovi per sempre questo pv stock
+      pv_stocks:
+        show:
+          other: Altri Pv Stocks
+  activerecord:
+    attributes:
+      'refinery/pv_stocks/pv_stock':
+        name: Name
+        ticker: Ticker
+        market: Market
+        min_cor: Min Cor
+        average_cor: Average Cor
+        max_cor: Max Cor
+        min_usd: Min Usd
+        average_usd: Average Usd
+        max_usd: Max Usd

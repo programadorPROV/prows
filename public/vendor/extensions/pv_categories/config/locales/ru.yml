@@ -1,0 +1,31 @@
+ru:
+  refinery:
+    plugins:
+      pv_categories:
+        title: Pv Categories
+    pv_categories:
+      admin:
+        pv_categories:
+          actions:
+            create_new: Добавить Pv Category
+            reorder: Изменить порядок Pv Categories
+            reorder_done: Закончить изменять порядок Pv Categories
+          records:
+            title: Pv Categories
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Pv Categories" не найдено. Нажмите "Добавить Pv Category" чтобы создать pv category.
+          pv_category:
+            view_live_html: Просмотреть pv category вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать pv category
+            delete: Удалить pv category навсегда
+      pv_categories:
+        show:
+          other: Другие Pv Categories
+  activerecord:
+    attributes:
+      'refinery/pv_categories/pv_category':
+        name: Name
+        description: Description
+        status: Status
+        type: Type
+        description_type: Description Type

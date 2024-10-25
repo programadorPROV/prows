@@ -1,0 +1,34 @@
+<!-- blocks -->
+
+<div class="row_lm">
+			<div class="column_container pad_t_4_240_st  pad_t_5_700_st pad_b_1">
+				<%Refinery::PvHomeMainSections::PvHomeMainSection.all.each_slice(3) do |blocks|%>
+					<%blocks.each_with_index do |block, index|%>
+
+						<%if index == 0%>
+							<%valiable1 = "pad_b_4_240_st"%>
+							<%valiable2 = "pad_r_3_1024_st"%>
+						<%elsif index == 1%>
+							<%valiable1 = "pad_tb_4_240_st pad_lr_3_1024_st"%>
+							<%valiable2 = "border_3_block"%>
+						<%elsif index == 2%>
+							<%valiable1 = "pad_t_4_240_st"%>
+							<%valiable2 = "pad_l_3_1024_st"%>
+						<%end%>
+
+						<div class="column_1 g_s1024_33p <%= valiable1%> pad_tb_0_1024_st <%= valiable2%>">
+							<div class="relative pad_l_15r_700_st pad_l_0_1024_st block_divs">
+
+								<%=link_to block.title, (block.link || ""), :class=> "pad_b_1_240_st pad_l_2_700_st pad_l_0_1024_st title_block_1"%>
+
+								<%= link_to "", (block.link || ""), :class=> "h10_240_st h10_1024_st h100p_700_st absolute_tl_700_st relative_1024_st w15_700_st w100p_1024_st bck_cover", :style => "background-image:url('#{block.photo.url}');"%>
+
+								<%= link_to block.description.html_safe, (block.link || ""), :class=> "pad_t_1_240_st pad_l_2_700_st pad_l_0_1024_st pad_t_2_1024_st body_text_2"%>
+							</div>
+						</div>
+					<%end%>
+				<%end%>
+			</div>
+		</div>
+	</div>
+</div>

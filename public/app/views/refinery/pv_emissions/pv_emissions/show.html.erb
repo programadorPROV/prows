@@ -1,0 +1,47 @@
+<% emission = @pv_emission%>
+<%= render "/refinery/pages/shared/header"%>
+
+<div>
+  
+  <div class="content_wrap bck_white max_w_100">
+    <div class="pad_t_4_240_st pad_t_0_900_st">
+      <div class="pad_tb_2">
+        <div>
+          <div class="column_container relative min_h_35">
+            <div class="column_1 pad_b_4_240_st absolute_tr_900_st w15_900_st w20_900_st w25_1024_st">
+              <div class="bck_cover h20_240_st h15_1024_st" style="background-image: url('<%=emission.photo.url%>');"></div>
+              <div>
+                <div class="split_border pad_tb_2">
+                  <%= render "refinery/pv_emissions/pv_emissions/emision/emission_submenu"%>
+                </div>
+              </div>
+            </div>
+
+            <div class="column_1 pad_r_15r_900_st pad_r_20r_900_st pad_r_25r_1024_st">
+              <div class="indice">
+                  <div class ="c_gray light fs_15 inline_divs v_mid_all">
+                    <div><%=@page.title%></div>
+                    <div>/</div>
+                  </div>
+                  <div class="uppercase c_green_1 fs_18 light lh_35"><%= Refinery::PvCategories::PvCategory.find(emission.refinery_pv_category_id).name%></div>
+                </div>
+              <div class="row_lm">
+                <div class="body_text_2 pad_r_4_900_st">
+                  <div class="fs_18 light c_green_1 lh_2 pad_b_1">
+                    <div><strong><%= emission.title%></strong></div>
+                  </div>
+                  <%= emission.description.html_safe%>
+                  <br/>
+                </div>
+                <%= render "refinery/pv_emissions/pv_emissions/emision/emission_doc"%>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <%= render "/refinery/pages/shared/main_blocks"%>
+    </div>
+  </div>
+</div>
+
+<%= render "/refinery/pages/shared/footer"%>

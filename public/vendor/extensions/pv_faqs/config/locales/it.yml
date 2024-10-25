@@ -1,0 +1,31 @@
+it:
+  refinery:
+    plugins:
+      pv_faqs:
+        title: Pv Faqs
+    pv_faqs:
+      admin:
+        pv_faqs:
+          actions:
+            create_new: Aggiungi Nuovo Pv Faq
+            reorder: Riordina Pv Faqs
+            reorder_done: Termina il Riordino di Pv Faqs
+          records:
+            title: Pv Faqs
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Pv Faqs. Clicca "Aggiungi Nuovo Pv Faq" per aggiungere il tuo primo pv faq.
+          pv_faq:
+            view_live_html: Guarda live questo pv faq <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo pv faq
+            delete: Rimuovi per sempre questo pv faq
+      pv_faqs:
+        show:
+          other: Altri Pv Faqs
+  activerecord:
+    attributes:
+      'refinery/pv_faqs/pv_faq':
+        title: Title
+        question: Question
+        answer: Answer
+        status: Status
+        refinery_pv_category_id: Refinery Pv Category

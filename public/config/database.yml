@@ -1,0 +1,14 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  min_messages: warning
+  pool: 10
+  timeout: 5000
+
+production:
+  <<: *default
+  database: 23736_pvweb_production
+  host: localhost
+  username: bi_user
+  password: 81_R3dm1N3
+  encoding: utf8

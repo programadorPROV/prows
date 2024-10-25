@@ -1,0 +1,29 @@
+tr:
+  refinery:
+    plugins:
+      pv_interest_links:
+        title: Pv Interest Links
+    pv_interest_links:
+      admin:
+        pv_interest_links:
+          actions:
+            create_new: Yeni Ekle Pv Interest Link
+            reorder: Tekrar sirala Pv Interest Links
+            reorder_done: Tekrar siralama tamamlandiPv Interest Links
+          records:
+            title: Pv Interest Links
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Pv Interest Links yok henuz.  Tikla "Yeni Ekle Pv Interest Link" eklemek senin ilk pv interest link.
+          pv_interest_link:
+            view_live_html: Bunu canlu pv interest link goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle pv interest link
+            delete: Bunu Sil pv interest link sonsuza dek
+      pv_interest_links:
+        show:
+          other: Diger Pv Interest Links
+  activerecord:
+    attributes:
+      'refinery/pv_interest_links/pv_interest_link':
+        title: Title
+        link: Link
+        status: Status

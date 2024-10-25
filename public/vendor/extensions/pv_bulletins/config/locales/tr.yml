@@ -1,0 +1,34 @@
+tr:
+  refinery:
+    plugins:
+      pv_bulletins:
+        title: Pv Bulletins
+    pv_bulletins:
+      admin:
+        pv_bulletins:
+          actions:
+            create_new: Yeni Ekle Pv Bulletin
+            reorder: Tekrar sirala Pv Bulletins
+            reorder_done: Tekrar siralama tamamlandiPv Bulletins
+          records:
+            title: Pv Bulletins
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Pv Bulletins yok henuz.  Tikla "Yeni Ekle Pv Bulletin" eklemek senin ilk pv bulletin.
+          pv_bulletin:
+            view_live_html: Bunu canlu pv bulletin goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle pv bulletin
+            delete: Bunu Sil pv bulletin sonsuza dek
+      pv_bulletins:
+        show:
+          other: Diger Pv Bulletins
+  activerecord:
+    attributes:
+      'refinery/pv_bulletins/pv_bulletin':
+        title: Title
+        thumbnail: Thumbnail
+        bulletin_image: Bulletin Image
+        content: Content
+        creation_date: Creation Date
+        status: Status
+        associated_link: Associated Link
+        refinery_pv_category_id: Refinery Pv Category

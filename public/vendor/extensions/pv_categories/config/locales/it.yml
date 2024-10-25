@@ -1,0 +1,31 @@
+it:
+  refinery:
+    plugins:
+      pv_categories:
+        title: Pv Categories
+    pv_categories:
+      admin:
+        pv_categories:
+          actions:
+            create_new: Aggiungi Nuovo Pv Category
+            reorder: Riordina Pv Categories
+            reorder_done: Termina il Riordino di Pv Categories
+          records:
+            title: Pv Categories
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Pv Categories. Clicca "Aggiungi Nuovo Pv Category" per aggiungere il tuo primo pv category.
+          pv_category:
+            view_live_html: Guarda live questo pv category <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo pv category
+            delete: Rimuovi per sempre questo pv category
+      pv_categories:
+        show:
+          other: Altri Pv Categories
+  activerecord:
+    attributes:
+      'refinery/pv_categories/pv_category':
+        name: Name
+        description: Description
+        status: Status
+        type: Type
+        description_type: Description Type

@@ -1,0 +1,32 @@
+it:
+  refinery:
+    plugins:
+      pv_documents:
+        title: Pv Documents
+    pv_documents:
+      admin:
+        pv_documents:
+          actions:
+            create_new: Aggiungi Nuovo Pv Document
+            reorder: Riordina Pv Documents
+            reorder_done: Termina il Riordino di Pv Documents
+          records:
+            title: Pv Documents
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Pv Documents. Clicca "Aggiungi Nuovo Pv Document" per aggiungere il tuo primo pv document.
+          pv_document:
+            view_live_html: Guarda live questo pv document <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo pv document
+            delete: Rimuovi per sempre questo pv document
+      pv_documents:
+        show:
+          other: Altri Pv Documents
+  activerecord:
+    attributes:
+      'refinery/pv_documents/pv_document':
+        title: Title
+        description: Description
+        status: Status
+        creation_date: Creation Date
+        file_url: File Url
+        refinery_pv_category_id: Refinery Pv Category

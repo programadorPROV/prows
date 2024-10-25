@@ -1,0 +1,75 @@
+<% content_for :body_content_title do %>
+  <%= @pv_stock.name %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @pv_stock.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Ticker</h1>
+    <p>
+      <%=raw @pv_stock.ticker %>
+    </p>
+  </section>
+  <section>
+    <h1>Market</h1>
+    <p>
+      <%=raw @pv_stock.market %>
+    </p>
+  </section>
+  <section>
+    <h1>Min Cor</h1>
+    <p>
+      <%=raw @pv_stock.min_cor %>
+    </p>
+  </section>
+  <section>
+    <h1>Average Cor</h1>
+    <p>
+      <%=raw @pv_stock.average_cor %>
+    </p>
+  </section>
+  <section>
+    <h1>Max Cor</h1>
+    <p>
+      <%=raw @pv_stock.max_cor %>
+    </p>
+  </section>
+  <section>
+    <h1>Min Usd</h1>
+    <p>
+      <%=raw @pv_stock.min_usd %>
+    </p>
+  </section>
+  <section>
+    <h1>Average Usd</h1>
+    <p>
+      <%=raw @pv_stock.average_usd %>
+    </p>
+  </section>
+  <section>
+    <h1>Max Usd</h1>
+    <p>
+      <%=raw @pv_stock.max_usd %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="pv_stocks">
+      <% @pv_stocks.each do |pv_stock| %>
+        <li>
+          <%= link_to pv_stock.name, refinery.pv_stocks_pv_stock_path(pv_stock) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

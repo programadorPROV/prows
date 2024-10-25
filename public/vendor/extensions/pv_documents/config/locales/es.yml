@@ -1,0 +1,33 @@
+es:
+  refinery:
+    plugins:
+      pv_documents:
+        title: Documentos Financieros
+#        article: masculino/femenino
+    pv_documents:
+      admin:
+        pv_documents:
+          actions:
+            create_new: Crear nuevo pv document
+            reorder: Reordenar pv documents
+            reorder_done: Reordenación de pv documents completada
+          records:
+            title: Pv Documents
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay pv documents todavía. Pulsa en "Crear nuevo Pv Document" para crear tu primer pv document.
+          pv_document:
+            view_live_html: Ver este pv document como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este pv document
+            delete: Borrar este pv document para siempre
+      pv_documents:
+        show:
+          other: Otros pv documents
+  activerecord:
+    attributes:
+      'refinery/pv_documents/pv_document':
+        title: Title
+        description: Description
+        status: Status
+        creation_date: Creation Date
+        file_url: File Url
+        refinery_pv_category_id: Refinery Pv Category

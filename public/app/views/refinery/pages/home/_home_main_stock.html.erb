@@ -1,0 +1,35 @@
+<!-- stock -->
+<div class="row_lm">
+	<div class="content_wrap">
+		<div class="max_w_100 mar_auto bck_green_2 pad_2 relative">
+
+			<!-- title -->
+			<div class="fs_2 uppercase light c_white pad_b_3_240_st pad_b_2_480_st pad_b_0_1024_st">
+				Rendimientos
+			</div>
+
+			<!-- select -->
+			<div class="absolute z3 stock_container_select">
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height select_stock">
+			        <input type="text" value="" class="mdl-textfield__input c_white input_selected fs_1" id="currency" readonly>
+			        <input type="hidden" value="" id="currency_value" name="currency">
+			        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+			        <label for="currency" class="mdl-textfield__label"><span class="fs_1 f_w_normal c_white">Moneda</span></label>
+			        <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu currency_loader">
+			            <li class="mdl-menu__item" data-val="cor">Córdoba</li>
+			            <li class="mdl-menu__item" data-val="usd">USD</li>
+			        </ul>
+			    </div>
+			</div>
+
+			<div class="pad_t_4_240_st pad_t_0_480_st pad_t_1_700_st pad_t_2_1024_st relative overflow_h">
+				<!-- Swiper -->
+				<div id="swiper_stock_container">
+					<%=render "/refinery/pages/shared/change_currency"%>
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+</div>

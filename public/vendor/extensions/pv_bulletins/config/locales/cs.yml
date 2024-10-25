@@ -1,0 +1,34 @@
+cs:
+  refinery:
+    plugins:
+      pv_bulletins:
+        title: Pv Bulletins
+    pv_bulletins:
+      admin:
+        pv_bulletins:
+          actions:
+            create_new: Přidat Pv Bulletin
+            reorder: Řadit Pv Bulletins
+            reorder_done: Konec řazení Pv Bulletins
+          records:
+            title: Pv Bulletins
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Pv Bulletins. Zvolte "Přidat Pv Bulletin" pro přidání prvního pv bulletin.
+          pv_bulletin:
+            view_live_html: Zobrazit náhled pv bulletin<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit pv bulletin
+            delete: Smazat pv bulletin
+      pv_bulletins:
+        show:
+          other: Další Pv Bulletins
+  activerecord:
+    attributes:
+      'refinery/pv_bulletins/pv_bulletin':
+        title: Title
+        thumbnail: Thumbnail
+        bulletin_image: Bulletin Image
+        content: Content
+        creation_date: Creation Date
+        status: Status
+        associated_link: Associated Link
+        refinery_pv_category_id: Refinery Pv Category

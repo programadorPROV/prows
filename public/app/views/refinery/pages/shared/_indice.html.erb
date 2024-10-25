@@ -1,0 +1,9 @@
+<div class="indice">
+	<div class="c_gray light fs_15 inline_divs v_mid_all">
+		<%if @page.parent.present?%>
+			<div><%=@page.parent.title%></div>
+			<div>/</div>
+		<%end%>
+	</div>
+	<div class="uppercase c_green_1 fs_18 light lh_35"><%=@page.title%></div>
+</div>

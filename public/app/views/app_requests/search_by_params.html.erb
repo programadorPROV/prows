@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Provalores</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="keywords" content="puesto de bolsa,puestos de bolsa,provalores,puesto de bolsa de nicaragua,puestos de bolsa de nicaragua,provalores puesto de bolsa,bolsa de valores,nicaragua,inversion,bolsa,valores,banpro,proval,maximizar ahorros,ahorros,operaciones,bursatil,bursatiles,custodia,boletas,financiamiento bursatil" />
+	<%= render "refinery/pages/shared/head"%>
+</head>
+<body class="ontop itsmoving bck_gray0">
+	<%= render "/refinery/pages/shared/header"%>
+	<div>
+		<div class="content_wrap bck_white max_w_100">
+			<div class="pad_t_4_240_st pad_t_0_900_st">
+				<div class="pad_tb_2">
+					<div>
+						<div class="indice">
+							<div class="c_gray light fs_15 inline_divs v_mid_all">
+								<div>Resultados</div>
+								<div>/</div>
+							</div>
+							<div class="light c_gray_pro_1">
+								Argumentos de busqueda:
+								<%= text_field_tag :search, (params[:q].present? ? params[:q] : "Sin argumentos"), class: "uppercase c_green_1 fs_18 light lh_35" %>
+							</div>
+						</div>
+						<div class="row_lm">
+							<div class="pad_1_900_st">
+
+								<!-- message -->
+								<div class="italic fs_18 light lh_3 inline_divs v_mid_all">
+
+									<!-- valor -->
+									<div><%=@items.present? ? @items.count : "0"%> Coincidencias en</div>
+									<!-- key -->
+									<div class="c_green_2">
+										Provalores
+									</div>
+
+								</div>
+								
+							</div>
+						</div>
+						<%if params[:q].present? %>
+							<div>
+								<div class="pad_tb_1_900_st">
+									<ol class="pad_1_divs fs_15  counter_naiz split_border">
+										<%= @items.present? ? (render "/app_requests/app_requests/items_search.html") : ""%>
+									</ol>
+								</div>
+							</div>
+						<%end%>
+					</div>
+				</div>
+				<%= render "/refinery/pages/shared/main_blocks"%>
+			</div>
+		</div>
+	</div>
+	<%= render "/refinery/pages/shared/footer"%>
+</body>
+</html>

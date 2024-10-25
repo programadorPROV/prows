@@ -1,0 +1,34 @@
+fr:
+  refinery:
+    plugins:
+      pv_board_directors:
+        title: Pv Board Directors
+    pv_board_directors:
+      admin:
+        pv_board_directors:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Pv Board Director
+            reorder: Réordonner les Pv Board Directors
+            reorder_done: Fin de réordonnancement des Pv Board Directors
+          records:
+            title: Pv Board Directors
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Pv Board Director. Cliquer sur "Créer un(e) nouve(au/l/lle) Pv Board Director" pour créer votre premi(er/ère) pv board director.'
+          pv_board_director:
+            view_live_html: Voir ce(t/tte) pv board director <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) pv board director
+            delete: Supprimer définitivement ce(t/tte) pv board director
+      pv_board_directors:
+        show:
+          other: Autres Pv Board Directors
+  activerecord:
+    attributes:
+      'refinery/pv_board_directors/pv_board_director':
+        name: Name
+        last_name: Last Name
+        position: Position
+        description: Description
+        mail: Mail
+        link: Link
+        photo: Photo
+        status: Status

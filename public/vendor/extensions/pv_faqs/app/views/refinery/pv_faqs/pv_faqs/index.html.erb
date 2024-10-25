@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="pv_faqs">
+    <% @pv_faqs.each do |pv_faq| %>
+      <li>
+        <%= link_to pv_faq.title, refinery.pv_faqs_pv_faq_path(pv_faq) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

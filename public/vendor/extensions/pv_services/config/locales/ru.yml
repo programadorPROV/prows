@@ -1,0 +1,31 @@
+ru:
+  refinery:
+    plugins:
+      pv_services:
+        title: Pv Services
+    pv_services:
+      admin:
+        pv_services:
+          actions:
+            create_new: Добавить Pv Service
+            reorder: Изменить порядок Pv Services
+            reorder_done: Закончить изменять порядок Pv Services
+          records:
+            title: Pv Services
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Pv Services" не найдено. Нажмите "Добавить Pv Service" чтобы создать pv service.
+          pv_service:
+            view_live_html: Просмотреть pv service вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать pv service
+            delete: Удалить pv service навсегда
+      pv_services:
+        show:
+          other: Другие Pv Services
+  activerecord:
+    attributes:
+      'refinery/pv_services/pv_service':
+        title: Title
+        description: Description
+        photo: Photo
+        status: Status
+        refinery_pv_category_id: Refinery Pv Category

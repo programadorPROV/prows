@@ -1,0 +1,64 @@
+// video
+<% if @main_video.present? %>
+	// 2. This code loads the IFrame Player API code asynchronously.
+	var tag = document.createElement('script');
+
+	tag.src = "https://www.youtube.com/iframe_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+	// 3. This function creates an <iframe> (and YouTube player)
+	//    after the API code downloads.
+	var player;
+	function onYouTubeIframeAPIReady() {
+		player = new YT.Player('player', {
+			videoId: '<%=@main_video.value%>',
+			height: '100%',
+			width: '100%',
+			playerVars:{'border':0, 'wmode':'transparent', 'autohide': 0, 'controls':0, 'showinfo':1, 'modestbranding':1, 'rel': 0, 'loop':0, 'fs':1},
+			events: {
+				'onReady': onPlayerReady,
+				'onStateChange': onPlayerStateChange
+			}
+		});
+	}
+
+	// 4. The API will call this function when the video player is ready.
+	function onPlayerReady(event) {
+		event.target.playVideo();
+	}
+
+	// 5. The API calls this function when the player's state changes.
+	//    The function indicates that when playing a video (state=1),
+	//    the player should play for six seconds and then stop.
+	var done = false;
+	function onPlayerStateChange(event) {
+		if (event.data == YT.PlayerState.PLAYING && !done) {
+			//setTimeout(stopVideo, 6000);
+			done = true;
+		}
+	}
+	function stopVideo() {
+		player.stopVideo();
+	}
+
+<% end %>
+
+$(".currency_loader li.mdl-menu__item").on("click", function(){
+	setTimeout(function(){
+		$.getScript('/app_requests/change_currency?currency='+$("#currency_value").val(), function() {
+
+			// slide stocks
+			var swiper = new Swiper('.swiper_default_sm', {
+				slidesPerView: 1,
+				speed: 200,
+				autoHeight: false,
+				loop: true,
+				navigation: {
+					nextEl: '.swiper_button_prev_container',
+					prevEl: '.swiper_button_next_container',
+				}
+			});
+		});
+	},100);
+});

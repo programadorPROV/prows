@@ -1,0 +1,32 @@
+ru:
+  refinery:
+    plugins:
+      pv_documents:
+        title: Pv Documents
+    pv_documents:
+      admin:
+        pv_documents:
+          actions:
+            create_new: Добавить Pv Document
+            reorder: Изменить порядок Pv Documents
+            reorder_done: Закончить изменять порядок Pv Documents
+          records:
+            title: Pv Documents
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Pv Documents" не найдено. Нажмите "Добавить Pv Document" чтобы создать pv document.
+          pv_document:
+            view_live_html: Просмотреть pv document вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать pv document
+            delete: Удалить pv document навсегда
+      pv_documents:
+        show:
+          other: Другие Pv Documents
+  activerecord:
+    attributes:
+      'refinery/pv_documents/pv_document':
+        title: Title
+        description: Description
+        status: Status
+        creation_date: Creation Date
+        file_url: File Url
+        refinery_pv_category_id: Refinery Pv Category

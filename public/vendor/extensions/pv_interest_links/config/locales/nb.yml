@@ -1,0 +1,29 @@
+nb:
+  refinery:
+    plugins:
+      pv_interest_links:
+        title: Pv Interest Links
+    pv_interest_links:
+      admin:
+        pv_interest_links:
+          actions:
+            create_new: Lag en ny Pv Interest Link
+            reorder: Endre rekkefølgen på Pv Interest Links
+            reorder_done: Ferdig å endre rekkefølgen Pv Interest Links
+          records:
+            title: Pv Interest Links
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Pv Interest Links enda. Klikk på "Lag en ny Pv Interest Link" for å legge til din første pv interest link.
+          pv_interest_link:
+            view_live_html: Vis hvordan denne pv interest link ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne pv interest link
+            delete: Fjern denne pv interest link permanent
+      pv_interest_links:
+        show:
+          other: Andre Pv Interest Links
+  activerecord:
+    attributes:
+      'refinery/pv_interest_links/pv_interest_link':
+        title: Title
+        link: Link
+        status: Status

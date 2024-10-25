@@ -1,0 +1,45 @@
+<% content_for :body_content_title do %>
+  <%= @pv_slider_image.title %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Title</h1>
+    <p>
+      <%=raw @pv_slider_image.title %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @pv_slider_image.description %>
+    </p>
+  </section>
+  <section>
+    <h1>Photo</h1>
+    <p>
+      <%= image_fu @pv_slider_image.photo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Satus</h1>
+    <p>
+      <%=raw @pv_slider_image.satus %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="pv_slider_images">
+      <% @pv_slider_images.each do |pv_slider_image| %>
+        <li>
+          <%= link_to pv_slider_image.title, refinery.pv_slider_images_pv_slider_image_path(pv_slider_image) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

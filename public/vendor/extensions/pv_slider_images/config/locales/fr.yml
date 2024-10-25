@@ -1,0 +1,30 @@
+fr:
+  refinery:
+    plugins:
+      pv_slider_images:
+        title: Pv Slider Images
+    pv_slider_images:
+      admin:
+        pv_slider_images:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Pv Slider Image
+            reorder: Réordonner les Pv Slider Images
+            reorder_done: Fin de réordonnancement des Pv Slider Images
+          records:
+            title: Pv Slider Images
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Pv Slider Image. Cliquer sur "Créer un(e) nouve(au/l/lle) Pv Slider Image" pour créer votre premi(er/ère) pv slider image.'
+          pv_slider_image:
+            view_live_html: Voir ce(t/tte) pv slider image <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) pv slider image
+            delete: Supprimer définitivement ce(t/tte) pv slider image
+      pv_slider_images:
+        show:
+          other: Autres Pv Slider Images
+  activerecord:
+    attributes:
+      'refinery/pv_slider_images/pv_slider_image':
+        title: Title
+        description: Description
+        photo: Photo
+        satus: Satus

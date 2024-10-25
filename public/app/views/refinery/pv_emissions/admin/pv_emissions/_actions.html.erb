@@ -1,0 +1,20 @@
+<ul>
+  <% if ::Refinery::PvEmissions::Admin::PvEmissionsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.pv_emissions_admin_pv_emissions_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= action_label :add, refinery.new_pv_emissions_admin_pv_emission_path, t('.create_new') %>
+  </li>
+<% if !searching? && ::Refinery::PvEmissions::Admin::PvEmissionsController.sortable? && ::Refinery::PvEmissions::PvEmission.many? %>
+  <li>
+    <%= action_label :reorder,
+                     refinery.pv_emissions_admin_pv_emissions_path,
+                     t('.reorder', what:  "Pv Emissions"), id: 'reorder_action'%>
+    <%= action_label :reorder_done,
+                     refinery.pv_emissions_admin_pv_emissions_path,
+                      t('.reorder_done', what: "Pv Emissions"), id: 'reorder_action_done', class: 'hidden'%>
+  </li>
+<% end %>
+</ul>

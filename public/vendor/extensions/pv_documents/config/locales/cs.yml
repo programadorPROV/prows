@@ -1,0 +1,32 @@
+cs:
+  refinery:
+    plugins:
+      pv_documents:
+        title: Pv Documents
+    pv_documents:
+      admin:
+        pv_documents:
+          actions:
+            create_new: Přidat Pv Document
+            reorder: Řadit Pv Documents
+            reorder_done: Konec řazení Pv Documents
+          records:
+            title: Pv Documents
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Pv Documents. Zvolte "Přidat Pv Document" pro přidání prvního pv document.
+          pv_document:
+            view_live_html: Zobrazit náhled pv document<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit pv document
+            delete: Smazat pv document
+      pv_documents:
+        show:
+          other: Další Pv Documents
+  activerecord:
+    attributes:
+      'refinery/pv_documents/pv_document':
+        title: Title
+        description: Description
+        status: Status
+        creation_date: Creation Date
+        file_url: File Url
+        refinery_pv_category_id: Refinery Pv Category

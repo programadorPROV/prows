@@ -1,0 +1,29 @@
+ru:
+  refinery:
+    plugins:
+      pv_interest_links:
+        title: Pv Interest Links
+    pv_interest_links:
+      admin:
+        pv_interest_links:
+          actions:
+            create_new: Добавить Pv Interest Link
+            reorder: Изменить порядок Pv Interest Links
+            reorder_done: Закончить изменять порядок Pv Interest Links
+          records:
+            title: Pv Interest Links
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Pv Interest Links" не найдено. Нажмите "Добавить Pv Interest Link" чтобы создать pv interest link.
+          pv_interest_link:
+            view_live_html: Просмотреть pv interest link вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать pv interest link
+            delete: Удалить pv interest link навсегда
+      pv_interest_links:
+        show:
+          other: Другие Pv Interest Links
+  activerecord:
+    attributes:
+      'refinery/pv_interest_links/pv_interest_link':
+        title: Title
+        link: Link
+        status: Status

@@ -1,0 +1,20 @@
+<ul>
+  <% if ::Refinery::PvInterestLinks::Admin::PvInterestLinksController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.pv_interest_links_admin_pv_interest_links_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= action_label :add, refinery.new_pv_interest_links_admin_pv_interest_link_path, t('.create_new') %>
+  </li>
+<% if !searching? && ::Refinery::PvInterestLinks::Admin::PvInterestLinksController.sortable? && ::Refinery::PvInterestLinks::PvInterestLink.many? %>
+  <li>
+    <%= action_label :reorder,
+                     refinery.pv_interest_links_admin_pv_interest_links_path,
+                     t('.reorder', what:  "Pv Interest Links"), id: 'reorder_action'%>
+    <%= action_label :reorder_done,
+                     refinery.pv_interest_links_admin_pv_interest_links_path,
+                      t('.reorder_done', what: "Pv Interest Links"), id: 'reorder_action_done', class: 'hidden'%>
+  </li>
+<% end %>
+</ul>

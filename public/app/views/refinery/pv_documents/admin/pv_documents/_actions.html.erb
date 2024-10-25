@@ -1,0 +1,20 @@
+<ul>
+  <% if ::Refinery::PvDocuments::Admin::PvDocumentsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.pv_documents_admin_pv_documents_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= action_label :add, refinery.new_pv_documents_admin_pv_document_path, t('.create_new') %>
+  </li>
+<% if !searching? && ::Refinery::PvDocuments::Admin::PvDocumentsController.sortable? && ::Refinery::PvDocuments::PvDocument.many? %>
+  <li>
+    <%= action_label :reorder,
+                     refinery.pv_documents_admin_pv_documents_path,
+                     t('.reorder', what:  "Pv Documents"), id: 'reorder_action'%>
+    <%= action_label :reorder_done,
+                     refinery.pv_documents_admin_pv_documents_path,
+                      t('.reorder_done', what: "Pv Documents"), id: 'reorder_action_done', class: 'hidden'%>
+  </li>
+<% end %>
+</ul>

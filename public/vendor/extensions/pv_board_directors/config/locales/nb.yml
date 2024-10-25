@@ -1,0 +1,34 @@
+nb:
+  refinery:
+    plugins:
+      pv_board_directors:
+        title: Pv Board Directors
+    pv_board_directors:
+      admin:
+        pv_board_directors:
+          actions:
+            create_new: Lag en ny Pv Board Director
+            reorder: Endre rekkefølgen på Pv Board Directors
+            reorder_done: Ferdig å endre rekkefølgen Pv Board Directors
+          records:
+            title: Pv Board Directors
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Pv Board Directors enda. Klikk på "Lag en ny Pv Board Director" for å legge til din første pv board director.
+          pv_board_director:
+            view_live_html: Vis hvordan denne pv board director ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne pv board director
+            delete: Fjern denne pv board director permanent
+      pv_board_directors:
+        show:
+          other: Andre Pv Board Directors
+  activerecord:
+    attributes:
+      'refinery/pv_board_directors/pv_board_director':
+        name: Name
+        last_name: Last Name
+        position: Position
+        description: Description
+        mail: Mail
+        link: Link
+        photo: Photo
+        status: Status

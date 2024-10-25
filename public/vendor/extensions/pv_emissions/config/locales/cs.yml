@@ -1,0 +1,30 @@
+cs:
+  refinery:
+    plugins:
+      pv_emissions:
+        title: Pv Emissions
+    pv_emissions:
+      admin:
+        pv_emissions:
+          actions:
+            create_new: Přidat Pv Emission
+            reorder: Řadit Pv Emissions
+            reorder_done: Konec řazení Pv Emissions
+          records:
+            title: Pv Emissions
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Pv Emissions. Zvolte "Přidat Pv Emission" pro přidání prvního pv emission.
+          pv_emission:
+            view_live_html: Zobrazit náhled pv emission<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit pv emission
+            delete: Smazat pv emission
+      pv_emissions:
+        show:
+          other: Další Pv Emissions
+  activerecord:
+    attributes:
+      'refinery/pv_emissions/pv_emission':
+        title: Title
+        description: Description
+        photo: Photo
+        refinery_pv_category_id: Refinery Pv Category

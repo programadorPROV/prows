@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      pv_slider_images:
+        title: Pv Slider Images
+    pv_slider_images:
+      admin:
+        pv_slider_images:
+          actions:
+            create_new: Lag en ny Pv Slider Image
+            reorder: Endre rekkefølgen på Pv Slider Images
+            reorder_done: Ferdig å endre rekkefølgen Pv Slider Images
+          records:
+            title: Pv Slider Images
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Pv Slider Images enda. Klikk på "Lag en ny Pv Slider Image" for å legge til din første pv slider image.
+          pv_slider_image:
+            view_live_html: Vis hvordan denne pv slider image ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne pv slider image
+            delete: Fjern denne pv slider image permanent
+      pv_slider_images:
+        show:
+          other: Andre Pv Slider Images
+  activerecord:
+    attributes:
+      'refinery/pv_slider_images/pv_slider_image':
+        title: Title
+        description: Description
+        photo: Photo
+        satus: Satus

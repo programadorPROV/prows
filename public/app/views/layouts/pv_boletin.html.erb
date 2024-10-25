@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="en" class="unselected" id="body_container">
+	<head>
+		<title><%=@page.title%> | Provalores</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<meta name="keywords" content="puesto de bolsa,puestos de bolsa,provalores,puesto de bolsa de nicaragua,puestos de bolsa de nicaragua,provalores puesto de bolsa,bolsa de valores,nicaragua,inversion,bolsa,valores,banpro,proval,maximizar ahorros,ahorros,operaciones,bursatil,bursatiles,custodia,boletas,financiamiento bursatil" />
+		<%= render "refinery/pages/shared/head"%>
+	</head>
+	<body class="ontop itsmoving bck_gray0 ">
+		<%= yield%>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114427481-1"></script>
+		
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+				gtag('config', 'UA-114427481-1');
+		</script>
+
+	</body>
+</html> 

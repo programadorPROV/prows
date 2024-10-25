@@ -1,0 +1,34 @@
+nl:
+  refinery:
+    plugins:
+      pv_bulletins:
+        title: Pv Bulletins
+    pv_bulletins:
+      admin:
+        pv_bulletins:
+          actions:
+            create_new: Nieuwe Pv Bulletin toevoegen
+            reorder: De volgorde van de Pv Bulletins wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Pv Bulletin-volgorde
+          records:
+            title: Pv Bulletins
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Pv Bulletins. Druk op 'Nieuwe Pv Bulletin toevoegen' om de eerste toe te voegen.
+          pv_bulletin:
+            view_live_html: Deze pv bulletin op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze pv bulletin
+            delete: Deze pv bulletin definitief verwijderen
+      pv_bulletins:
+        show:
+          other: Andere Pv Bulletins
+  activerecord:
+    attributes:
+      'refinery/pv_bulletins/pv_bulletin':
+        title: Title
+        thumbnail: Thumbnail
+        bulletin_image: Bulletin Image
+        content: Content
+        creation_date: Creation Date
+        status: Status
+        associated_link: Associated Link
+        refinery_pv_category_id: Refinery Pv Category

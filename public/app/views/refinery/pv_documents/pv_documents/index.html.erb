@@ -1,0 +1,39 @@
+<%= render "/refinery/pages/shared/header"%>
+
+<div>
+	<div class="content_wrap bck_white max_w_100">
+		<div class="pad_t_4_240_st pad_t_0_900_st">
+			<div class="pad_tb_2">
+				<div>
+					<div class="column_container relative min_h_15">
+								
+						<%=render "refinery/pages/shared/indice"%>
+						<!-- right panel -->
+						<div class="column_1 pad_b_4_240_st absolute_tr_900_st w15_900_st w20_900_st w25_1024_st">
+
+							<!-- image -->
+							<%if @page.images.present?%>
+								<div class="bck_cover h20_240_st h15_1024_st" style="background-image: url('<%=@page.images.first.url%>');"></div>
+							<%else%>
+								<div class="bck_cover h20_240_st h15_1024_st bck_gray0"></div>
+							<%end%>
+						</div>
+						
+					</div>
+					
+					<div class="row_lm">
+						<div class="pad_tb_1_900_st">
+							<div class="pad_1_divs fs_15 collpase_download">
+								<%= render "/refinery/pv_documents/pv_documents/documentos/download_links"%>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<%= render "/refinery/pages/shared/main_blocks"%>
+		</div>
+	</div>
+</div>
+
+<%= render "/refinery/pages/shared/footer"%>

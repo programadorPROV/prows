@@ -1,0 +1,31 @@
+en:
+  refinery:
+    plugins:
+      pv_services:
+        title: Pv Services
+    pv_services:
+      admin:
+        pv_services:
+          actions:
+            create_new: Add New Pv Service
+            reorder: Reorder Pv Services
+            reorder_done: Done Reordering Pv Services
+          records:
+            title: Pv Services
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Pv Services yet. Click "Add New Pv Service" to add your first pv service.
+          pv_service:
+            view_live_html: View this pv service live <br/><em>(opens in a new window)</em>
+            edit: Edit this pv service
+            delete: Remove this pv service forever
+      pv_services:
+        show:
+          other: Other Pv Services
+  activerecord:
+    attributes:
+      'refinery/pv_services/pv_service':
+        title: Title
+        description: Description
+        photo: Photo
+        status: Status
+        refinery_pv_category_id: Refinery Pv Category

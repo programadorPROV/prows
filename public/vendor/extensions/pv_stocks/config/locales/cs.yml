@@ -1,0 +1,35 @@
+cs:
+  refinery:
+    plugins:
+      pv_stocks:
+        title: Pv Stocks
+    pv_stocks:
+      admin:
+        pv_stocks:
+          actions:
+            create_new: Přidat Pv Stock
+            reorder: Řadit Pv Stocks
+            reorder_done: Konec řazení Pv Stocks
+          records:
+            title: Pv Stocks
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Pv Stocks. Zvolte "Přidat Pv Stock" pro přidání prvního pv stock.
+          pv_stock:
+            view_live_html: Zobrazit náhled pv stock<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit pv stock
+            delete: Smazat pv stock
+      pv_stocks:
+        show:
+          other: Další Pv Stocks
+  activerecord:
+    attributes:
+      'refinery/pv_stocks/pv_stock':
+        name: Name
+        ticker: Ticker
+        market: Market
+        min_cor: Min Cor
+        average_cor: Average Cor
+        max_cor: Max Cor
+        min_usd: Min Usd
+        average_usd: Average Usd
+        max_usd: Max Usd

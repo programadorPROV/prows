@@ -1,0 +1,13 @@
+<ul class="list_pro">
+	<%Refinery::PvDocEmissions::PvDocEmission.where(:refinery_pv_emission_id => params[:id]).where(:status => 'true').order('created_at DESC').each do |doc|%>
+		<li class="pad_tb_1 pad_l_1">
+			<%document = Refinery::Resource.find(doc.document_id) if doc.document_id.present?%>
+			<%if document.present?%>
+				<%= link_to doc.title, document.url, :class=>"c_green_2 underline" %>
+			<%else%>
+				<%= link_to doc.title, doc.url_doc,:class=>"c_green_2 underline" %>
+			<%end%>
+		
+		</li>
+	<% end %>
+</ul>

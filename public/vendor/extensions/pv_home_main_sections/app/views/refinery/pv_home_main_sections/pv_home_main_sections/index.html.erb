@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="pv_home_main_sections">
+    <% @pv_home_main_sections.each do |pv_home_main_section| %>
+      <li>
+        <%= link_to pv_home_main_section.title, refinery.pv_home_main_sections_pv_home_main_section_path(pv_home_main_section) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

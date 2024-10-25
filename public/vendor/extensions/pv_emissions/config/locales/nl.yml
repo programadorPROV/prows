@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      pv_emissions:
+        title: Pv Emissions
+    pv_emissions:
+      admin:
+        pv_emissions:
+          actions:
+            create_new: Nieuwe Pv Emission toevoegen
+            reorder: De volgorde van de Pv Emissions wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Pv Emission-volgorde
+          records:
+            title: Pv Emissions
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Pv Emissions. Druk op 'Nieuwe Pv Emission toevoegen' om de eerste toe te voegen.
+          pv_emission:
+            view_live_html: Deze pv emission op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze pv emission
+            delete: Deze pv emission definitief verwijderen
+      pv_emissions:
+        show:
+          other: Andere Pv Emissions
+  activerecord:
+    attributes:
+      'refinery/pv_emissions/pv_emission':
+        title: Title
+        description: Description
+        photo: Photo
+        refinery_pv_category_id: Refinery Pv Category

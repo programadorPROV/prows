@@ -1,0 +1,4 @@
+---
+name: hecho_relevante_ficohsa.pdf
+model_class: Refinery::Resource
+model_attachment: file

@@ -1,0 +1,34 @@
+nb:
+  refinery:
+    plugins:
+      pv_bulletins:
+        title: Pv Bulletins
+    pv_bulletins:
+      admin:
+        pv_bulletins:
+          actions:
+            create_new: Lag en ny Pv Bulletin
+            reorder: Endre rekkefølgen på Pv Bulletins
+            reorder_done: Ferdig å endre rekkefølgen Pv Bulletins
+          records:
+            title: Pv Bulletins
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Pv Bulletins enda. Klikk på "Lag en ny Pv Bulletin" for å legge til din første pv bulletin.
+          pv_bulletin:
+            view_live_html: Vis hvordan denne pv bulletin ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne pv bulletin
+            delete: Fjern denne pv bulletin permanent
+      pv_bulletins:
+        show:
+          other: Andre Pv Bulletins
+  activerecord:
+    attributes:
+      'refinery/pv_bulletins/pv_bulletin':
+        title: Title
+        thumbnail: Thumbnail
+        bulletin_image: Bulletin Image
+        content: Content
+        creation_date: Creation Date
+        status: Status
+        associated_link: Associated Link
+        refinery_pv_category_id: Refinery Pv Category

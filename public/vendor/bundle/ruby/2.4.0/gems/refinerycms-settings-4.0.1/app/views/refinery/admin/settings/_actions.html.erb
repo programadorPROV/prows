@@ -1,0 +1,8 @@
+<ul>
+  <li>
+    <%= render '/refinery/admin/search', :url => refinery.admin_settings_path %>
+  </li>
+  <li>
+    <%= action_label :add, refinery.new_admin_setting_path(dialog: true), t('.new') %>
+  </li>
+</ul>

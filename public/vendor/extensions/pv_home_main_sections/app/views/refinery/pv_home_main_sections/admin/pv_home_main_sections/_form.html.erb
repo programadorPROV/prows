@@ -1,0 +1,41 @@
+<%= form_for [refinery, :pv_home_main_sections_admin, @pv_home_main_section] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @pv_home_main_section,
+              :include_object_name => true %>
+
+  <%= render '/refinery/admin/locale_picker',
+              :current_locale => Globalize.locale %>
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :photo -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :photo_id,
+               :image => @pv_home_main_section.photo,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "pv_home_main_sections/pv_home_main_section" -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.pv_home_main_sections.admin.pv_home_main_sections.pv_home_main_section'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @pv_home_main_section.title) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

@@ -1,0 +1,46 @@
+<%= form_for [refinery, :pv_slider_images_admin, @pv_slider_image] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @pv_slider_image,
+              :include_object_name => true %>
+
+  <%= render '/refinery/admin/locale_picker',
+              :current_locale => Globalize.locale %>
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "pv_slider_images/pv_slider_image" -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :photo -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :photo_id,
+               :image => @pv_slider_image.photo,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :satus -%>
+    <%= f.check_box :satus, :checked => @pv_slider_image[:satus] -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.pv_slider_images.admin.pv_slider_images.pv_slider_image'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @pv_slider_image.title) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

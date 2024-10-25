@@ -1,0 +1,34 @@
+ru:
+  refinery:
+    plugins:
+      pv_bulletins:
+        title: Pv Bulletins
+    pv_bulletins:
+      admin:
+        pv_bulletins:
+          actions:
+            create_new: Добавить Pv Bulletin
+            reorder: Изменить порядок Pv Bulletins
+            reorder_done: Закончить изменять порядок Pv Bulletins
+          records:
+            title: Pv Bulletins
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Pv Bulletins" не найдено. Нажмите "Добавить Pv Bulletin" чтобы создать pv bulletin.
+          pv_bulletin:
+            view_live_html: Просмотреть pv bulletin вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать pv bulletin
+            delete: Удалить pv bulletin навсегда
+      pv_bulletins:
+        show:
+          other: Другие Pv Bulletins
+  activerecord:
+    attributes:
+      'refinery/pv_bulletins/pv_bulletin':
+        title: Title
+        thumbnail: Thumbnail
+        bulletin_image: Bulletin Image
+        content: Content
+        creation_date: Creation Date
+        status: Status
+        associated_link: Associated Link
+        refinery_pv_category_id: Refinery Pv Category

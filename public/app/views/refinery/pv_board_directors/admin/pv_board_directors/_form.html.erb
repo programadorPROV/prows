@@ -1,0 +1,76 @@
+<%= form_for [refinery, :pv_board_directors_admin, @pv_board_director] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @pv_board_director,
+              :include_object_name => true %>
+
+  <%= render '/refinery/admin/locale_picker',
+              :current_locale => Globalize.locale %>
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :last_name -%>
+    <%= f.text_field :last_name -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :position -%>
+    <%= f.text_field :position -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "pv_board_directors/pv_board_director" -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :mail -%>
+    <%= f.text_field :mail -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link -%>
+    <%= f.text_field :link -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :photo -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :photo_id,
+               :image => @pv_board_director.photo,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :director_type -%>
+    <%= select :pv_board_director, :director_type, Refinery::PvBoardDirectors::PvBoardDirector.type_map, { :prompt => "Selecione un tipo"}, {:class=>"select", :tabindex=>"-1"}%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :status -%>
+    <%= f.check_box :status, :checked => @pv_board_director[:status] -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :linked_in_tag -%>
+    <%= f.text_field :linked_in_tag -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.pv_board_directors.admin.pv_board_directors.pv_board_director'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @pv_board_director.name) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

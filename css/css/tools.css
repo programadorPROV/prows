@@ -1,0 +1,53 @@
+.title_tools.world_indices_tools{
+	font-family: "Arial Black", Arial;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #868686;
+	background: none !important;
+}
+.title_tools.world_indices_tools > div{
+	font-style: normal;
+	padding-bottom: 15px;
+	text-align: center;
+}
+.world_indices_tools:hover,.world_indices_tools:nth-of-type(odd):hover{
+	background: #FDFFCE;
+}
+.title_tools.world_indices_tools .name_tools{
+	text-align: left;
+}
+.world_indices_tools > div{
+	display: inline-block;
+	margin-right: -3px;
+	padding: 5px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+}
+.world_indices_tools:nth-of-type(odd){
+	background: #EAFFEA;
+}
+.name_tools{
+	text-transform: uppercase;
+	font-style: italic;
+	width: 40%;
+	font-size: 12px;
+}
+.precio_tools{
+	width: 20%;
+	text-align: center;
+}
+.cambio_n_tools{
+	width: 20%;
+	text-align: center;
+}
+.cambio_p_tools{
+	width: 20%;
+	text-align: center;
+}
+
+.cambio_p_tools[alt*="+"],.cambio_n_tools[alt*="+"]{
+	color: #0080FF;
+}
+.cambio_p_tools[alt*="-"],.cambio_n_tools[alt*="-"]{
+	color: #FF0000;
+}

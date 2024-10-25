@@ -1,0 +1,33 @@
+zh-CN:
+  refinery:
+    plugins:
+      pv_doc_emissions:
+        title: Pv Doc Emissions
+    pv_doc_emissions:
+      admin:
+        pv_doc_emissions:
+          actions:
+            create_new: 建立新的 Pv Doc Emission
+            reorder: 对 Pv Doc Emissions 重新排序
+            reorder_done: 对 Pv Doc Emissions 的重新排序结束
+          records:
+            title: Pv Doc Emissions
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Pv Doc Emissions yet. Click "Add New Pv Doc Emission" to add your first pv doc emission.
+            no_items_yet: 目前没有 Pv Doc Emissions . 点击 "Add New Pv Doc Emission" 创建一个pv doc emission.
+          pv_doc_emission:
+            view_live_html: 查看 pv doc emission 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 pv doc emission
+            delete: 永久删除 pv doc emission
+      pv_doc_emissions:
+        show:
+          other: 其他 Pv Doc Emissions
+  activerecord:
+    attributes:
+      'refinery/pv_doc_emissions/pv_doc_emission':
+        title: Title
+        document: Document
+        url_doc: Url Doc
+        status: Status
+        refinery_pv_emission_id: Refinery Pv Emission

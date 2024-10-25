@@ -1,0 +1,20 @@
+<ul>
+  <% if ::Refinery::PvFaqs::Admin::PvFaqsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.pv_faqs_admin_pv_faqs_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= action_label :add, refinery.new_pv_faqs_admin_pv_faq_path, t('.create_new') %>
+  </li>
+<% if !searching? && ::Refinery::PvFaqs::Admin::PvFaqsController.sortable? && ::Refinery::PvFaqs::PvFaq.many? %>
+  <li>
+    <%= action_label :reorder,
+                     refinery.pv_faqs_admin_pv_faqs_path,
+                     t('.reorder', what:  "Pv Faqs"), id: 'reorder_action'%>
+    <%= action_label :reorder_done,
+                     refinery.pv_faqs_admin_pv_faqs_path,
+                      t('.reorder_done', what: "Pv Faqs"), id: 'reorder_action_done', class: 'hidden'%>
+  </li>
+<% end %>
+</ul>

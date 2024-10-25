@@ -1,0 +1,31 @@
+fr:
+  refinery:
+    plugins:
+      pv_doc_emissions:
+        title: Pv Doc Emissions
+    pv_doc_emissions:
+      admin:
+        pv_doc_emissions:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Pv Doc Emission
+            reorder: Réordonner les Pv Doc Emissions
+            reorder_done: Fin de réordonnancement des Pv Doc Emissions
+          records:
+            title: Pv Doc Emissions
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Pv Doc Emission. Cliquer sur "Créer un(e) nouve(au/l/lle) Pv Doc Emission" pour créer votre premi(er/ère) pv doc emission.'
+          pv_doc_emission:
+            view_live_html: Voir ce(t/tte) pv doc emission <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) pv doc emission
+            delete: Supprimer définitivement ce(t/tte) pv doc emission
+      pv_doc_emissions:
+        show:
+          other: Autres Pv Doc Emissions
+  activerecord:
+    attributes:
+      'refinery/pv_doc_emissions/pv_doc_emission':
+        title: Title
+        document: Document
+        url_doc: Url Doc
+        status: Status
+        refinery_pv_emission_id: Refinery Pv Emission

@@ -1,0 +1,31 @@
+ru:
+  refinery:
+    plugins:
+      pv_faqs:
+        title: Pv Faqs
+    pv_faqs:
+      admin:
+        pv_faqs:
+          actions:
+            create_new: Добавить Pv Faq
+            reorder: Изменить порядок Pv Faqs
+            reorder_done: Закончить изменять порядок Pv Faqs
+          records:
+            title: Pv Faqs
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Pv Faqs" не найдено. Нажмите "Добавить Pv Faq" чтобы создать pv faq.
+          pv_faq:
+            view_live_html: Просмотреть pv faq вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать pv faq
+            delete: Удалить pv faq навсегда
+      pv_faqs:
+        show:
+          other: Другие Pv Faqs
+  activerecord:
+    attributes:
+      'refinery/pv_faqs/pv_faq':
+        title: Title
+        question: Question
+        answer: Answer
+        status: Status
+        refinery_pv_category_id: Refinery Pv Category

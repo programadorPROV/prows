@@ -1,0 +1,35 @@
+nl:
+  refinery:
+    plugins:
+      pv_stocks:
+        title: Pv Stocks
+    pv_stocks:
+      admin:
+        pv_stocks:
+          actions:
+            create_new: Nieuwe Pv Stock toevoegen
+            reorder: De volgorde van de Pv Stocks wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Pv Stock-volgorde
+          records:
+            title: Pv Stocks
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Pv Stocks. Druk op 'Nieuwe Pv Stock toevoegen' om de eerste toe te voegen.
+          pv_stock:
+            view_live_html: Deze pv stock op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze pv stock
+            delete: Deze pv stock definitief verwijderen
+      pv_stocks:
+        show:
+          other: Andere Pv Stocks
+  activerecord:
+    attributes:
+      'refinery/pv_stocks/pv_stock':
+        name: Name
+        ticker: Ticker
+        market: Market
+        min_cor: Min Cor
+        average_cor: Average Cor
+        max_cor: Max Cor
+        min_usd: Min Usd
+        average_usd: Average Usd
+        max_usd: Max Usd

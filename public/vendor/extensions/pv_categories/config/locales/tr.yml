@@ -1,0 +1,31 @@
+tr:
+  refinery:
+    plugins:
+      pv_categories:
+        title: Pv Categories
+    pv_categories:
+      admin:
+        pv_categories:
+          actions:
+            create_new: Yeni Ekle Pv Category
+            reorder: Tekrar sirala Pv Categories
+            reorder_done: Tekrar siralama tamamlandiPv Categories
+          records:
+            title: Pv Categories
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Pv Categories yok henuz.  Tikla "Yeni Ekle Pv Category" eklemek senin ilk pv category.
+          pv_category:
+            view_live_html: Bunu canlu pv category goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle pv category
+            delete: Bunu Sil pv category sonsuza dek
+      pv_categories:
+        show:
+          other: Diger Pv Categories
+  activerecord:
+    attributes:
+      'refinery/pv_categories/pv_category':
+        name: Name
+        description: Description
+        status: Status
+        type: Type
+        description_type: Description Type

@@ -1,0 +1,32 @@
+es:
+  refinery:
+    plugins:
+      pv_faqs:
+        title: FAQ
+#        article: masculino/femenino
+    pv_faqs:
+      admin:
+        pv_faqs:
+          actions:
+            create_new: Crear nuevo pv faq
+            reorder: Reordenar pv faqs
+            reorder_done: Reordenación de pv faqs completada
+          records:
+            title: Pv Faqs
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay pv faqs todavía. Pulsa en "Crear nuevo Pv Faq" para crear tu primer pv faq.
+          pv_faq:
+            view_live_html: Ver este pv faq como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este pv faq
+            delete: Borrar este pv faq para siempre
+      pv_faqs:
+        show:
+          other: Otros pv faqs
+  activerecord:
+    attributes:
+      'refinery/pv_faqs/pv_faq':
+        title: Title
+        question: Question
+        answer: Answer
+        status: Status
+        refinery_pv_category_id: Refinery Pv Category

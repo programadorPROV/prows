@@ -1,0 +1,29 @@
+it:
+  refinery:
+    plugins:
+      pv_home_main_sections:
+        title: Pv Home Main Sections
+    pv_home_main_sections:
+      admin:
+        pv_home_main_sections:
+          actions:
+            create_new: Aggiungi Nuovo Pv Home Main Section
+            reorder: Riordina Pv Home Main Sections
+            reorder_done: Termina il Riordino di Pv Home Main Sections
+          records:
+            title: Pv Home Main Sections
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Pv Home Main Sections. Clicca "Aggiungi Nuovo Pv Home Main Section" per aggiungere il tuo primo pv home main section.
+          pv_home_main_section:
+            view_live_html: Guarda live questo pv home main section <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo pv home main section
+            delete: Rimuovi per sempre questo pv home main section
+      pv_home_main_sections:
+        show:
+          other: Altri Pv Home Main Sections
+  activerecord:
+    attributes:
+      'refinery/pv_home_main_sections/pv_home_main_section':
+        title: Title
+        photo: Photo
+        description: Description

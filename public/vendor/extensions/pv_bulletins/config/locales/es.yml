@@ -1,0 +1,35 @@
+es:
+  refinery:
+    plugins:
+      pv_bulletins:
+        title: Boletines
+#        article: masculino/femenino
+    pv_bulletins:
+      admin:
+        pv_bulletins:
+          actions:
+            create_new: Crear nuevo pv bulletin
+            reorder: Reordenar pv bulletins
+            reorder_done: Reordenación de pv bulletins completada
+          records:
+            title: Pv Bulletins
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay pv bulletins todavía. Pulsa en "Crear nuevo Pv Bulletin" para crear tu primer pv bulletin.
+          pv_bulletin:
+            view_live_html: Ver este pv bulletin como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este pv bulletin
+            delete: Borrar este pv bulletin para siempre
+      pv_bulletins:
+        show:
+          other: Otros pv bulletins
+  activerecord:
+    attributes:
+      'refinery/pv_bulletins/pv_bulletin':
+        title: Title
+        thumbnail: Thumbnail
+        bulletin_image: Bulletin Image
+        content: Content
+        creation_date: Creation Date
+        status: Status
+        associated_link: Associated Link
+        refinery_pv_category_id: Refinery Pv Category

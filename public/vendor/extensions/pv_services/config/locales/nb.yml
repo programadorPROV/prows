@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      pv_services:
+        title: Pv Services
+    pv_services:
+      admin:
+        pv_services:
+          actions:
+            create_new: Lag en ny Pv Service
+            reorder: Endre rekkefølgen på Pv Services
+            reorder_done: Ferdig å endre rekkefølgen Pv Services
+          records:
+            title: Pv Services
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Pv Services enda. Klikk på "Lag en ny Pv Service" for å legge til din første pv service.
+          pv_service:
+            view_live_html: Vis hvordan denne pv service ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne pv service
+            delete: Fjern denne pv service permanent
+      pv_services:
+        show:
+          other: Andre Pv Services
+  activerecord:
+    attributes:
+      'refinery/pv_services/pv_service':
+        title: Title
+        description: Description
+        photo: Photo
+        status: Status
+        refinery_pv_category_id: Refinery Pv Category

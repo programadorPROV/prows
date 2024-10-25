@@ -1,0 +1,4 @@
+---
+name: user.png
+model_class: Refinery::Image
+model_attachment: image

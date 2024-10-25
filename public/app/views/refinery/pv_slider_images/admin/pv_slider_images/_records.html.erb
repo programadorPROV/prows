@@ -1,0 +1,16 @@
+<%= render 'refinery/admin/search_header', :url => refinery.pv_slider_images_admin_pv_slider_images_path %>
+<div class='pagination_container'>
+  <% if @pv_slider_images.any? %>
+    <%= render 'pv_slider_images' %>
+  <% else %>
+    <p>
+      <% if searching? %>
+        <%= t('no_results', :scope => 'refinery.admin.search') %>
+      <% else %>
+        <strong>
+          <%= t('.no_items_yet') %>
+        </strong>
+      <% end %>
+    </p>
+  <% end %>
+</div>

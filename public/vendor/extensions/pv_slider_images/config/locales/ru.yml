@@ -1,0 +1,30 @@
+ru:
+  refinery:
+    plugins:
+      pv_slider_images:
+        title: Pv Slider Images
+    pv_slider_images:
+      admin:
+        pv_slider_images:
+          actions:
+            create_new: Добавить Pv Slider Image
+            reorder: Изменить порядок Pv Slider Images
+            reorder_done: Закончить изменять порядок Pv Slider Images
+          records:
+            title: Pv Slider Images
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Pv Slider Images" не найдено. Нажмите "Добавить Pv Slider Image" чтобы создать pv slider image.
+          pv_slider_image:
+            view_live_html: Просмотреть pv slider image вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать pv slider image
+            delete: Удалить pv slider image навсегда
+      pv_slider_images:
+        show:
+          other: Другие Pv Slider Images
+  activerecord:
+    attributes:
+      'refinery/pv_slider_images/pv_slider_image':
+        title: Title
+        description: Description
+        photo: Photo
+        satus: Satus

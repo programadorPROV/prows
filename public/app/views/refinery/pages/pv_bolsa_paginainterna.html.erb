@@ -1,0 +1,38 @@
+<div class="content_wrap bck_white max_w_100">
+	<div class="pad_t_4_240_st pad_t_0_900_st">
+		<div class="pad_tb_2">
+			<div>
+				<div class="column_container relative min_h_35">
+					<div class="column_1 pad_b_4_240_st absolute_tr_900_st w15_900_st w20_900_st w25_1024_st">
+
+						<!-- image -->
+						<%if @page.images.present?%>
+						<div class="bck_cover only_900 h10_240_st h15_1024_st" style="background-image: url('<%=@page.images.first.url%>');"></div>
+						<%else%>
+							<div class="bck_cover only_900 h10_240_st h15_1024_st");"></div>
+						<%end%>
+						<div>
+							<div class="split_border pad_tb_2">
+								<%if @page.children.count != 0%>
+									<%=render :partial => "/refinery/pages/shared/submenu_bolsa_padre", :locals => {page: @page }%>
+								<%else%>
+									<%= render "/refinery/pages/shared/submenu_bolsa_hijo"%>
+								<%end%>
+							</div>
+						</div>
+
+					</div>
+					<div class="column_1 pad_r_15r_900_st pad_r_20r_900_st pad_r_25r_1024_st">
+						<%= render "refinery/pages/shared/indice"%>
+						<div class="row_lm">
+							<div class="body_text_2 pad_r_4_700_st">
+								<%=raw @page.content_for(:body)%>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<%= render "/refinery/pages/shared/main_blocks"%>
+	</div>
+</div>

@@ -1,0 +1,35 @@
+sk:
+  refinery:
+    plugins:
+      pv_stocks:
+        title: Pv Stocks
+    pv_stocks:
+      admin:
+        pv_stocks:
+          actions:
+            create_new: Pridať Pv Stock
+            reorder: Preusporiadať Pv Stocks
+            reorder_done: Koniec radenia Pv Stocks
+          records:
+            title: Pv Stocks
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Pv Stocks. Kliknite na "Pridať Pv Stock" pre pridanie prvého pv stock.
+          pv_stock:
+            view_live_html: Zobraziť náhľad pv stock<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť pv stock
+            delete: Zmazať pv stock
+      pv_stocks:
+        show:
+          other: Daľšie Pv Stocks
+  activerecord:
+    attributes:
+      'refinery/pv_stocks/pv_stock':
+        name: Name
+        ticker: Ticker
+        market: Market
+        min_cor: Min Cor
+        average_cor: Average Cor
+        max_cor: Max Cor
+        min_usd: Min Usd
+        average_usd: Average Usd
+        max_usd: Max Usd

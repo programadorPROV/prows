@@ -1,0 +1,32 @@
+es:
+  refinery:
+    plugins:
+      pv_doc_emissions:
+        title: Documentos de Emesion
+#        article: masculino/femenino
+    pv_doc_emissions:
+      admin:
+        pv_doc_emissions:
+          actions:
+            create_new: Crear nuevo pv doc emission
+            reorder: Reordenar pv doc emissions
+            reorder_done: Reordenación de pv doc emissions completada
+          records:
+            title: Pv Doc Emissions
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay pv doc emissions todavía. Pulsa en "Crear nuevo Pv Doc Emission" para crear tu primer pv doc emission.
+          pv_doc_emission:
+            view_live_html: Ver este pv doc emission como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este pv doc emission
+            delete: Borrar este pv doc emission para siempre
+      pv_doc_emissions:
+        show:
+          other: Otros pv doc emissions
+  activerecord:
+    attributes:
+      'refinery/pv_doc_emissions/pv_doc_emission':
+        title: Title
+        document: Document
+        url_doc: Url Doc
+        status: Status
+        refinery_pv_emission_id: Refinery Pv Emission

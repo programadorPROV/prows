@@ -1,0 +1,74 @@
+<!-- header -->
+	<div class="content_wrap">
+		<div class="max_w_100 mar_auto">
+			<div class="column_container v_mid_all relative_900_st">
+
+				<!-- logo -->
+				<div class="column_60p	 g_s360_70p g_s900_100p pad_r_25r_900_st pad_r_40r_1024_st pad_r_50r_1366_st">
+					<div class="logo pad_r_2_900_st relative" >
+						<div class="h6 w100p logo_pro" id="home-link" style="cursor: pointer;">
+						<span class="capitalize italic country_label light">Nicaragua</span>
+					</div>
+					</div>
+				</div>
+				
+				<div class="column_40p g_s360_30p g_s900_50p g_s900_60p text-right to_900">
+					<!-- action -->
+					<span class="inline"  onclick="javascript:unhide('menu_mobile');unhide('body_container');">
+						<i class="pad_1 fs_25 c_green_1 material-icons">&#xE5D2;</i>
+					</span>
+				</div>
+				
+				<!-- busqueda -->
+				<div class="column_1 social_head_container absolute_240_st w25_900_st w40_1024_st w50_1366_st">
+					<div class="social_head absolute w20 text-center left_0 top_0 h100p">
+						<div class="midd_container absolute h100p w100p left_0 top_0">
+							<div class="midd_cell inline_divs mar_divs">
+								<a href="https://www.facebook.com/provaloresnicaragua/" class="circle wh2 relative">
+									<span class="icon center_absolute wh80p icon_facebook_g"></span>
+								</a>
+								<a href="#" class="circle wh2 relative">
+									<span class="icon center_absolute wh80p icon_instagram_g"></span>
+								</a>
+								<a href="https://es.linkedin.com/company/provalores-puesto-de-bolsa" class="circle wh2 relative">
+									<span class="icon center_absolute wh80p icon_linkedin_g"></span>
+								</a>
+								<a href="#" class="circle wh2 relative">
+									<span class="icon center_absolute wh80p icon_twitter_g"></span>
+								</a>
+								<a href="https://www.youtube.com/channel/UCN-G8FMt-mg5w4eP5Itb9hQ" class="circle wh2 relative">
+									<span class="icon center_absolute wh80p icon_youtube_g"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="busqueda pad_t_1_240_st pad_t_0_900_st pad_l_20r_1024_st">
+						<div class="relative">
+							<%= form_tag(main_app.search_by_params_app_requests_path, class: :pad_r_5, method: :get) do%>
+								<div class="relative">
+									<%= text_field_tag :q, nil, class: "bck_gray0 pad_tb_1 pad_l_1 pad_r_5 fs_1 w100p", placeholder: "Buscar..."%>
+									<div class="lupa z1 absolute right_0 top_0 h100p w3 pointer" id="loupe_search">
+										<%= button_tag(type: :submit, :class=> "lupa z1 absolute right_0 top_0 h100p w3 pointer") do %>
+											<%=content_tag(:i,class: "material-icons c_green_2") do%>
+											&#xE8B6;
+											<%end%>
+										<%end%>
+									</div>
+								</div>
+							<%end%>
+							<div class=" absolute right_0 top_0 h100p flag_container pad_05 ">
+								<div class="center_absolute flag_ni icon"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	$('#home-link').on('click', function() {
+		location.href = '/'    
+	});
+</script>

@@ -1,0 +1,35 @@
+es:
+  refinery:
+    plugins:
+      pv_board_directors:
+        title: Junta Directiva
+#        article: masculino/femenino
+    pv_board_directors:
+      admin:
+        pv_board_directors:
+          actions:
+            create_new: Crear nuevo pv board director
+            reorder: Reordenar pv board directors
+            reorder_done: Reordenación de pv board directors completada
+          records:
+            title: Pv Board Directors
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay pv board directors todavía. Pulsa en "Crear nuevo Pv Board Director" para crear tu primer pv board director.
+          pv_board_director:
+            view_live_html: Ver este pv board director como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este pv board director
+            delete: Borrar este pv board director para siempre
+      pv_board_directors:
+        show:
+          other: Otros pv board directors
+  activerecord:
+    attributes:
+      'refinery/pv_board_directors/pv_board_director':
+        name: Name
+        last_name: Last Name
+        position: Position
+        description: Description
+        mail: Mail
+        link: Link
+        photo: Photo
+        status: Status

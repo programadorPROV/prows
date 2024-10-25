@@ -1,0 +1,31 @@
+nl:
+  refinery:
+    plugins:
+      pv_services:
+        title: Pv Services
+    pv_services:
+      admin:
+        pv_services:
+          actions:
+            create_new: Nieuwe Pv Service toevoegen
+            reorder: De volgorde van de Pv Services wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Pv Service-volgorde
+          records:
+            title: Pv Services
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Pv Services. Druk op 'Nieuwe Pv Service toevoegen' om de eerste toe te voegen.
+          pv_service:
+            view_live_html: Deze pv service op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze pv service
+            delete: Deze pv service definitief verwijderen
+      pv_services:
+        show:
+          other: Andere Pv Services
+  activerecord:
+    attributes:
+      'refinery/pv_services/pv_service':
+        title: Title
+        description: Description
+        photo: Photo
+        status: Status
+        refinery_pv_category_id: Refinery Pv Category

@@ -1,0 +1,20 @@
+<ul>
+  <% if ::Refinery::PvSliderImages::Admin::PvSliderImagesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.pv_slider_images_admin_pv_slider_images_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= action_label :add, refinery.new_pv_slider_images_admin_pv_slider_image_path, t('.create_new') %>
+  </li>
+<% if !searching? && ::Refinery::PvSliderImages::Admin::PvSliderImagesController.sortable? && ::Refinery::PvSliderImages::PvSliderImage.many? %>
+  <li>
+    <%= action_label :reorder,
+                     refinery.pv_slider_images_admin_pv_slider_images_path,
+                     t('.reorder', what:  "Pv Slider Images"), id: 'reorder_action'%>
+    <%= action_label :reorder_done,
+                     refinery.pv_slider_images_admin_pv_slider_images_path,
+                      t('.reorder_done', what: "Pv Slider Images"), id: 'reorder_action_done', class: 'hidden'%>
+  </li>
+<% end %>
+</ul>

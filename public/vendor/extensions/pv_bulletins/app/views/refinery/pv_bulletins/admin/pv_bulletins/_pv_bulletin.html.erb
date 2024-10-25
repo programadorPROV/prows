@@ -1,0 +1,31 @@
+<li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(pv_bulletin) -%>">
+  <span class='title'>
+    <%= translated_field(pv_bulletin, :title) %>
+  </span>
+
+  <% if Refinery::I18n.frontend_locales.many? %>
+    <span class='locales'>
+      <% pv_bulletin.translations.sort_by{ |t| Refinery::I18n.frontend_locales.index(t.locale)}.each do |translation| %>
+        <% if translation.title.present? %>
+          <%= link_to refinery.edit_pv_bulletins_admin_pv_bulletin_path(pv_bulletin, :switch_locale => translation.locale),
+                      class: 'locale', title: translation.locale.upcase do %>
+
+            <div class="<%=translation.locale %> locale_marker">
+              <%= locale_text_icon(translation.locale.upcase) %>
+            </div>
+          <% end %>
+        <% end %>
+      <% end %>
+    </span>
+  <% end %>
+
+  <span class='preview'></span>
+
+  <span class='actions'>
+    <%= action_icon(:preview, refinery.pv_bulletins_pv_bulletin_path(pv_bulletin), t('.view_live_html')) %>
+    <%= action_icon(:edit,    refinery.edit_pv_bulletins_admin_pv_bulletin_path(pv_bulletin), t('.edit') ) %>
+    <%= action_icon(:delete,  refinery.pv_bulletins_admin_pv_bulletin_path(pv_bulletin), t('.delete'),
+      { class: "cancel confirm-delete",
+        data: {confirm: t('message',  scope: 'refinery.admin.delete', title: pv_bulletin.title)}}  ) %>
+  </span>
+</li>

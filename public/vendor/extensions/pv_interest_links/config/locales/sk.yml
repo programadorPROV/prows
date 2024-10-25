@@ -1,0 +1,29 @@
+sk:
+  refinery:
+    plugins:
+      pv_interest_links:
+        title: Pv Interest Links
+    pv_interest_links:
+      admin:
+        pv_interest_links:
+          actions:
+            create_new: Pridať Pv Interest Link
+            reorder: Preusporiadať Pv Interest Links
+            reorder_done: Koniec radenia Pv Interest Links
+          records:
+            title: Pv Interest Links
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Pv Interest Links. Kliknite na "Pridať Pv Interest Link" pre pridanie prvého pv interest link.
+          pv_interest_link:
+            view_live_html: Zobraziť náhľad pv interest link<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť pv interest link
+            delete: Zmazať pv interest link
+      pv_interest_links:
+        show:
+          other: Daľšie Pv Interest Links
+  activerecord:
+    attributes:
+      'refinery/pv_interest_links/pv_interest_link':
+        title: Title
+        link: Link
+        status: Status

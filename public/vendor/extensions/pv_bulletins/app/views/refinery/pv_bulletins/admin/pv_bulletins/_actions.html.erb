@@ -1,0 +1,20 @@
+<ul>
+  <% if ::Refinery::PvBulletins::Admin::PvBulletinsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.pv_bulletins_admin_pv_bulletins_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= action_label :add, refinery.new_pv_bulletins_admin_pv_bulletin_path, t('.create_new') %>
+  </li>
+<% if !searching? && ::Refinery::PvBulletins::Admin::PvBulletinsController.sortable? && ::Refinery::PvBulletins::PvBulletin.many? %>
+  <li>
+    <%= action_label :reorder,
+                     refinery.pv_bulletins_admin_pv_bulletins_path,
+                     t('.reorder', what:  "Pv Bulletins"), id: 'reorder_action'%>
+    <%= action_label :reorder_done,
+                     refinery.pv_bulletins_admin_pv_bulletins_path,
+                      t('.reorder_done', what: "Pv Bulletins"), id: 'reorder_action_done', class: 'hidden'%>
+  </li>
+<% end %>
+</ul>

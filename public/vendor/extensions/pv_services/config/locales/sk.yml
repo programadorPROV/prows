@@ -1,0 +1,31 @@
+sk:
+  refinery:
+    plugins:
+      pv_services:
+        title: Pv Services
+    pv_services:
+      admin:
+        pv_services:
+          actions:
+            create_new: Pridať Pv Service
+            reorder: Preusporiadať Pv Services
+            reorder_done: Koniec radenia Pv Services
+          records:
+            title: Pv Services
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Pv Services. Kliknite na "Pridať Pv Service" pre pridanie prvého pv service.
+          pv_service:
+            view_live_html: Zobraziť náhľad pv service<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť pv service
+            delete: Zmazať pv service
+      pv_services:
+        show:
+          other: Daľšie Pv Services
+  activerecord:
+    attributes:
+      'refinery/pv_services/pv_service':
+        title: Title
+        description: Description
+        photo: Photo
+        status: Status
+        refinery_pv_category_id: Refinery Pv Category

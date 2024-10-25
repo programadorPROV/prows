@@ -1,0 +1,12 @@
+<% @pv_interest_link.all.each do |link| %>
+	<div class="fs_18 light c_green_1 lh_2 pad_b_1">
+		<div>
+			<%=link.title%>
+		</div>
+	</div>
+	<a href="<%=link.link%>">
+		<%=link.link%>
+	</a>
+	<br/>
+	<br/>	
+<%end%>

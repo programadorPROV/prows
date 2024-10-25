@@ -1,0 +1,16 @@
+current directory: /home/www/vhosts/provalores.com.ni/httpdocs/public/vendor/bundle/ruby/2.3.0/gems/bindex-0.5.0/ext/bindex
+/opt/plesk/ruby/2.3.6/bin/ruby -r ./siteconf20180413-18641-10jzdkj.rb extconf.rb
+creating Makefile
+
+current directory: /home/www/vhosts/provalores.com.ni/httpdocs/public/vendor/bundle/ruby/2.3.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /home/www/vhosts/provalores.com.ni/httpdocs/public/vendor/bundle/ruby/2.3.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.so
+/usr/bin/ld: cannot find -lgmp
+collect2: error: ld returned 1 exit status
+make: *** [cruby.so] Error 1
+
+make failed, exit code 2

@@ -1,0 +1,32 @@
+es:
+  refinery:
+    plugins:
+      pv_categories:
+        title: Categorías
+#        article: masculino/femenino
+    pv_categories:
+      admin:
+        pv_categories:
+          actions:
+            create_new: Crear nuevo pv category
+            reorder: Reordenar pv categories
+            reorder_done: Reordenación de pv categories completada
+          records:
+            title: Pv Categories
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay pv categories todavía. Pulsa en "Crear nuevo Pv Category" para crear tu primer pv category.
+          pv_category:
+            view_live_html: Ver este pv category como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este pv category
+            delete: Borrar este pv category para siempre
+      pv_categories:
+        show:
+          other: Otros pv categories
+  activerecord:
+    attributes:
+      'refinery/pv_categories/pv_category':
+        name: Name
+        description: Description
+        status: Status
+        type: Type
+        description_type: Description Type

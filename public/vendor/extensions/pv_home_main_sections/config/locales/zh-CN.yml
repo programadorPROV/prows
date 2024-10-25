@@ -1,0 +1,31 @@
+zh-CN:
+  refinery:
+    plugins:
+      pv_home_main_sections:
+        title: Pv Home Main Sections
+    pv_home_main_sections:
+      admin:
+        pv_home_main_sections:
+          actions:
+            create_new: 建立新的 Pv Home Main Section
+            reorder: 对 Pv Home Main Sections 重新排序
+            reorder_done: 对 Pv Home Main Sections 的重新排序结束
+          records:
+            title: Pv Home Main Sections
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Pv Home Main Sections yet. Click "Add New Pv Home Main Section" to add your first pv home main section.
+            no_items_yet: 目前没有 Pv Home Main Sections . 点击 "Add New Pv Home Main Section" 创建一个pv home main section.
+          pv_home_main_section:
+            view_live_html: 查看 pv home main section 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 pv home main section
+            delete: 永久删除 pv home main section
+      pv_home_main_sections:
+        show:
+          other: 其他 Pv Home Main Sections
+  activerecord:
+    attributes:
+      'refinery/pv_home_main_sections/pv_home_main_section':
+        title: Title
+        photo: Photo
+        description: Description

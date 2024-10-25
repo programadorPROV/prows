@@ -1,0 +1,32 @@
+nb:
+  refinery:
+    plugins:
+      pv_documents:
+        title: Pv Documents
+    pv_documents:
+      admin:
+        pv_documents:
+          actions:
+            create_new: Lag en ny Pv Document
+            reorder: Endre rekkefølgen på Pv Documents
+            reorder_done: Ferdig å endre rekkefølgen Pv Documents
+          records:
+            title: Pv Documents
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Pv Documents enda. Klikk på "Lag en ny Pv Document" for å legge til din første pv document.
+          pv_document:
+            view_live_html: Vis hvordan denne pv document ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne pv document
+            delete: Fjern denne pv document permanent
+      pv_documents:
+        show:
+          other: Andre Pv Documents
+  activerecord:
+    attributes:
+      'refinery/pv_documents/pv_document':
+        title: Title
+        description: Description
+        status: Status
+        creation_date: Creation Date
+        file_url: File Url
+        refinery_pv_category_id: Refinery Pv Category

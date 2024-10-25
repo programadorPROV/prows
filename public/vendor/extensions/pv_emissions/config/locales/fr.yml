@@ -1,0 +1,30 @@
+fr:
+  refinery:
+    plugins:
+      pv_emissions:
+        title: Pv Emissions
+    pv_emissions:
+      admin:
+        pv_emissions:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Pv Emission
+            reorder: Réordonner les Pv Emissions
+            reorder_done: Fin de réordonnancement des Pv Emissions
+          records:
+            title: Pv Emissions
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Pv Emission. Cliquer sur "Créer un(e) nouve(au/l/lle) Pv Emission" pour créer votre premi(er/ère) pv emission.'
+          pv_emission:
+            view_live_html: Voir ce(t/tte) pv emission <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) pv emission
+            delete: Supprimer définitivement ce(t/tte) pv emission
+      pv_emissions:
+        show:
+          other: Autres Pv Emissions
+  activerecord:
+    attributes:
+      'refinery/pv_emissions/pv_emission':
+        title: Title
+        description: Description
+        photo: Photo
+        refinery_pv_category_id: Refinery Pv Category

@@ -1,0 +1,55 @@
+<% content_for :body_content_title do %>
+  <%= @pv_doc_emission.title %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Title</h1>
+    <p>
+      <%=raw @pv_doc_emission.title %>
+    </p>
+  </section>
+  <section>
+    <h1>Document</h1>
+    <p>
+      <% if @pv_doc_emission.document.present? %>
+        <%= link_to 'document', @pv_doc_emission.document.url %>
+      <% else %>
+        document
+      <% end %>
+    </p>
+  </section>
+  <section>
+    <h1>Url Doc</h1>
+    <p>
+      <%=raw @pv_doc_emission.url_doc %>
+    </p>
+  </section>
+  <section>
+    <h1>Status</h1>
+    <p>
+      <%=raw @pv_doc_emission.status %>
+    </p>
+  </section>
+  <section>
+    <h1>Refinery Pv Emission</h1>
+    <p>
+      <%=raw @pv_doc_emission.refinery_pv_emission_id %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="pv_doc_emissions">
+      <% @pv_doc_emissions.each do |pv_doc_emission| %>
+        <li>
+          <%= link_to pv_doc_emission.title, refinery.pv_doc_emissions_pv_doc_emission_path(pv_doc_emission) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

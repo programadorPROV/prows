@@ -1,0 +1,15 @@
+<%Refinery::PvCategories::PvCategory.where(:type_name => :emision).each do |category|%>
+
+	<div class="column_1 g_s1024_33p mar_tb_3 pad_lr_3_1024_st">
+		<div class="relative pad_l_15r_700_st pad_l_0_1024_st block_divs">
+			<!-- title -->
+			<%=link_to category.name, refinery.emisiones_path(:category => category.id), :class=> "pad_b_1_240_st pad_l_2_700_st pad_l_0_1024_st fs_15 c_green_2 bolder" %>
+
+			<!-- image -->
+			<%=link_to "", refinery.emisiones_path(:category => category.id), :class=> "h10_240_st h10_1024_st h100p_700_st absolute_tl_700_st relative_1024_st w15_700_st w100p_1024_st bck_cover", style: "background-image: url('#{category.photo.url}')"%>
+			<!-- body text -->
+			<%=link_to ((raw category.description)), refinery.emisiones_path(:category => category.id), :class=> "pad_t_1_240_st pad_l_2_700_st pad_l_0_1024_st pad_t_2_1024_st body_text_2"%>
+		</div>
+	</div>
+
+<% end %>

@@ -1,0 +1,35 @@
+fr:
+  refinery:
+    plugins:
+      pv_stocks:
+        title: Pv Stocks
+    pv_stocks:
+      admin:
+        pv_stocks:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Pv Stock
+            reorder: Réordonner les Pv Stocks
+            reorder_done: Fin de réordonnancement des Pv Stocks
+          records:
+            title: Pv Stocks
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Pv Stock. Cliquer sur "Créer un(e) nouve(au/l/lle) Pv Stock" pour créer votre premi(er/ère) pv stock.'
+          pv_stock:
+            view_live_html: Voir ce(t/tte) pv stock <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) pv stock
+            delete: Supprimer définitivement ce(t/tte) pv stock
+      pv_stocks:
+        show:
+          other: Autres Pv Stocks
+  activerecord:
+    attributes:
+      'refinery/pv_stocks/pv_stock':
+        name: Name
+        ticker: Ticker
+        market: Market
+        min_cor: Min Cor
+        average_cor: Average Cor
+        max_cor: Max Cor
+        min_usd: Min Usd
+        average_usd: Average Usd
+        max_usd: Max Usd

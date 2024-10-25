@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      pv_emissions:
+        title: Pv Emissions
+    pv_emissions:
+      admin:
+        pv_emissions:
+          actions:
+            create_new: Lag en ny Pv Emission
+            reorder: Endre rekkefølgen på Pv Emissions
+            reorder_done: Ferdig å endre rekkefølgen Pv Emissions
+          records:
+            title: Pv Emissions
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Pv Emissions enda. Klikk på "Lag en ny Pv Emission" for å legge til din første pv emission.
+          pv_emission:
+            view_live_html: Vis hvordan denne pv emission ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne pv emission
+            delete: Fjern denne pv emission permanent
+      pv_emissions:
+        show:
+          other: Andre Pv Emissions
+  activerecord:
+    attributes:
+      'refinery/pv_emissions/pv_emission':
+        title: Title
+        description: Description
+        photo: Photo
+        refinery_pv_category_id: Refinery Pv Category

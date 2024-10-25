@@ -1,0 +1,53 @@
+<% content_for :body_content_title do %>
+  <%= @pv_faq.title %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Title</h1>
+    <p>
+      <%=raw @pv_faq.title %>
+    </p>
+  </section>
+  <section>
+    <h1>Question</h1>
+    <p>
+      <%=raw @pv_faq.question %>
+    </p>
+  </section>
+  <section>
+    <h1>Answer</h1>
+    <p>
+      <%=raw @pv_faq.answer %>
+    </p>
+  </section>
+  <section>
+    <h1>Status</h1>
+    <p>
+      <%=raw @pv_faq.status %>
+    </p>
+  </section>
+  <section>
+    <h1>Refinery Pv Category</h1>
+    <%Refinery::PvCategories::PvCategory.where(:id => @pv_faq.refinery_pv_category_id).each do |cat|%>
+      <p>
+        <%=cat.name%>
+      </p>
+    <%end%>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="pv_faqs">
+      <% @pv_faqs.each do |pv_faq| %>
+        <li>
+          <%= link_to pv_faq.title, refinery.pv_faqs_pv_faq_path(pv_faq) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

@@ -1,0 +1,17 @@
+<%@pv_emission.all.each_with_index do |emision,index|%>
+
+	<div class="unselected container_collapse" id="row_<%=index%>">
+		<div class="c_gray_pro_1 block pad_b_15 lh_2 action_collapse split_border" onclick="javascript:unhide('row_<%=index%>');">
+			<%=emision.title%>
+		</div>
+		<div class="collpase_hide">
+			<div class="pad_b_3 pad_t_15 body_text_2">
+				<%=emision.preview.html_safe%>
+				<%=link_to image_tag("/assets/link.svg", :class => "wh1p5 mar_r_05"), refinery.emision_path(emision.id)%>
+				<%= link_to "ver", refinery.emision_path(emision.id), :class=>"c_green_2 underline capitalize" %>
+			</div>
+			
+		</div>
+	</div>
+
+<% end %>

@@ -1,0 +1,4 @@
+---
+name: FICOHSA-PROSPECTO.pdf
+model_class: Refinery::Resource
+model_attachment: file

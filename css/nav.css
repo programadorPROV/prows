@@ -1,0 +1,79 @@
+/* Navigation */
+/*container*/
+.nav {
+	font-size: 12px;
+	text-align: right;
+}
+.nav > ul{
+	text-align: left;
+	height: 23px;
+	width: 720px;
+	display: inline-block;
+	text-align: left;
+}
+/*links styles*/
+.nav a{
+	display: block;
+	text-align: center;
+	vertical-align: top;
+	text-decoration: none;
+	padding:5px;
+    color: #535353;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+/*conteiner links*/
+.nav ul > li {
+	display: inline-block;
+	/*float: left;*/
+	margin-right: -3px;
+	position: relative;
+	width: 143px;
+}
+/*submenu*/
+.nav li ul li{
+	background-color:#f3f3f3;
+}
+.nav li ul li a{
+	text-align: left;
+	background-color:#f3f3f3;
+	text-transform: capitalize;
+}
+.nav li ul {
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	top: 23px;
+	z-index: 99;
+	display: none;
+}
+.nav li ul a:hover {
+	color: #535353;
+	background-color: #e7e7e7;
+	background-image: none!important;
+}
+/*sub menu display*/
+.nav li:hover ul {
+	display: block;
+}
+/*tabs*/
+.nav > ul > li {
+	background-image: url('../images/tab-inactive-back.gif');
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-color: #CCECE1;
+    color: #535353;
+    height: 100%;
+}
+/*tab selected*/
+#selected {
+	background-image: url('../images/tab-active-back.gif');
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-color: #019966;
+	color: #fff;
+}
+#selected > a{
+	color: #fff
+}

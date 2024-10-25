@@ -1,0 +1,35 @@
+tr:
+  refinery:
+    plugins:
+      pv_stocks:
+        title: Pv Stocks
+    pv_stocks:
+      admin:
+        pv_stocks:
+          actions:
+            create_new: Yeni Ekle Pv Stock
+            reorder: Tekrar sirala Pv Stocks
+            reorder_done: Tekrar siralama tamamlandiPv Stocks
+          records:
+            title: Pv Stocks
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Pv Stocks yok henuz.  Tikla "Yeni Ekle Pv Stock" eklemek senin ilk pv stock.
+          pv_stock:
+            view_live_html: Bunu canlu pv stock goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle pv stock
+            delete: Bunu Sil pv stock sonsuza dek
+      pv_stocks:
+        show:
+          other: Diger Pv Stocks
+  activerecord:
+    attributes:
+      'refinery/pv_stocks/pv_stock':
+        name: Name
+        ticker: Ticker
+        market: Market
+        min_cor: Min Cor
+        average_cor: Average Cor
+        max_cor: Max Cor
+        min_usd: Min Usd
+        average_usd: Average Usd
+        max_usd: Max Usd

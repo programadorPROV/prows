@@ -1,0 +1,31 @@
+en:
+  refinery:
+    plugins:
+      pv_doc_emissions:
+        title: Pv Doc Emissions
+    pv_doc_emissions:
+      admin:
+        pv_doc_emissions:
+          actions:
+            create_new: Add New Pv Doc Emission
+            reorder: Reorder Pv Doc Emissions
+            reorder_done: Done Reordering Pv Doc Emissions
+          records:
+            title: Pv Doc Emissions
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Pv Doc Emissions yet. Click "Add New Pv Doc Emission" to add your first pv doc emission.
+          pv_doc_emission:
+            view_live_html: View this pv doc emission live <br/><em>(opens in a new window)</em>
+            edit: Edit this pv doc emission
+            delete: Remove this pv doc emission forever
+      pv_doc_emissions:
+        show:
+          other: Other Pv Doc Emissions
+  activerecord:
+    attributes:
+      'refinery/pv_doc_emissions/pv_doc_emission':
+        title: Title
+        document: Document
+        url_doc: Url Doc
+        status: Status
+        refinery_pv_emission_id: Refinery Pv Emission

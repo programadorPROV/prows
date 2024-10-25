@@ -1,0 +1,71 @@
+<%= render "/refinery/pages/shared/header"%>
+
+<div>
+	<%if @pv_emission.present?%>
+		<div class="content_wrap bck_white max_w_100">
+			<div class="pad_t_4_240_st pad_t_0_900_st">
+				<div class="pad_tb_2">
+					<div>
+							<div class="column_1 pad_r_15r_900_st pad_r_20r_900_st pad_r_25r_1024_st">
+								<div class="indice">
+									<div class ="c_gray light fs_15 inline_divs v_mid_all">
+										<div><%=@page.title%></div>
+										<div>/</div>
+									</div>
+									<div class="uppercase c_green_1 fs_18 light lh_35"><%= Refinery::PvCategories::PvCategory.find(@pv_emission.first.refinery_pv_category_id).name%></div>
+								</div>
+							</div>
+					</div>
+					<div class="row_lm">
+						<div class="pad_tb_1_900_st">
+							<div class="pad_1_divs fs_15 collpase_download">
+								<%= render "/refinery/pv_emissions/pv_emissions/emision/emission"%>
+							</div>
+						</div>
+					</div>
+				</div>
+				<%= render "/refinery/pages/shared/main_blocks"%>
+			</div>
+			
+		</div>
+		
+		
+
+	<%else%>
+		<div class="bck_h_100 relative" style="background-image: url(/assets/emisiones_cover.jpg);background-color: #f0f0f0;">
+				<div class="description_head max_w_100 mar_auto bck_cover pad_lr_5_900_st ">
+
+					<div class="midd_container h40_240_st h30_480_st w40_900_st w35_900_st pad_t_3_240_st pad_t_0_900_st intro_subpage">
+						<div class="midd_cell pad_2 z2">
+							
+							<div class="content_wrap">
+								<!-- title -->
+								<div class="title_subpage">
+									<%=raw @page.title%>
+								</div>
+
+								<div class="description_subpage body_text_2">
+									<%= params[:category].blank? ? (raw @page.content_for(:body)) : "No hay Emisiones publicadas"%>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		<div class="row_lm">
+			<div class="">
+				<div class="content_wrap">
+					<div class="max_w_100 mar_auto">
+						<div class="column_container border_split">
+							<%= render "/refinery/pv_emissions/pv_emissions/emision/emissions_category"%>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<%end%>
+</div>
+
+<%= render "/refinery/pages/shared/footer"%>

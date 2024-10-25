@@ -1,0 +1,31 @@
+cs:
+  refinery:
+    plugins:
+      pv_doc_emissions:
+        title: Pv Doc Emissions
+    pv_doc_emissions:
+      admin:
+        pv_doc_emissions:
+          actions:
+            create_new: Přidat Pv Doc Emission
+            reorder: Řadit Pv Doc Emissions
+            reorder_done: Konec řazení Pv Doc Emissions
+          records:
+            title: Pv Doc Emissions
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Pv Doc Emissions. Zvolte "Přidat Pv Doc Emission" pro přidání prvního pv doc emission.
+          pv_doc_emission:
+            view_live_html: Zobrazit náhled pv doc emission<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit pv doc emission
+            delete: Smazat pv doc emission
+      pv_doc_emissions:
+        show:
+          other: Další Pv Doc Emissions
+  activerecord:
+    attributes:
+      'refinery/pv_doc_emissions/pv_doc_emission':
+        title: Title
+        document: Document
+        url_doc: Url Doc
+        status: Status
+        refinery_pv_emission_id: Refinery Pv Emission

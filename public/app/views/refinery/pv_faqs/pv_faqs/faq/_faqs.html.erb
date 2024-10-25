@@ -1,0 +1,9 @@
+<% @pv_faq.all.each do |faq| %>
+	<div class="fs_18 light c_green_1 lh_2 pad_b_1">
+		<%=faq.question.html_safe%>
+	</div>
+	
+	<%=faq.answer.html_safe%>
+	<br/>
+	<br/>
+<%end%>

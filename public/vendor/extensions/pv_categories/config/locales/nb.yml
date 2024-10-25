@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      pv_categories:
+        title: Pv Categories
+    pv_categories:
+      admin:
+        pv_categories:
+          actions:
+            create_new: Lag en ny Pv Category
+            reorder: Endre rekkefølgen på Pv Categories
+            reorder_done: Ferdig å endre rekkefølgen Pv Categories
+          records:
+            title: Pv Categories
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Pv Categories enda. Klikk på "Lag en ny Pv Category" for å legge til din første pv category.
+          pv_category:
+            view_live_html: Vis hvordan denne pv category ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne pv category
+            delete: Fjern denne pv category permanent
+      pv_categories:
+        show:
+          other: Andre Pv Categories
+  activerecord:
+    attributes:
+      'refinery/pv_categories/pv_category':
+        name: Name
+        description: Description
+        status: Status
+        type: Type
+        description_type: Description Type

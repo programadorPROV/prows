@@ -1,0 +1,36 @@
+zh-CN:
+  refinery:
+    plugins:
+      pv_bulletins:
+        title: Pv Bulletins
+    pv_bulletins:
+      admin:
+        pv_bulletins:
+          actions:
+            create_new: 建立新的 Pv Bulletin
+            reorder: 对 Pv Bulletins 重新排序
+            reorder_done: 对 Pv Bulletins 的重新排序结束
+          records:
+            title: Pv Bulletins
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Pv Bulletins yet. Click "Add New Pv Bulletin" to add your first pv bulletin.
+            no_items_yet: 目前没有 Pv Bulletins . 点击 "Add New Pv Bulletin" 创建一个pv bulletin.
+          pv_bulletin:
+            view_live_html: 查看 pv bulletin 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 pv bulletin
+            delete: 永久删除 pv bulletin
+      pv_bulletins:
+        show:
+          other: 其他 Pv Bulletins
+  activerecord:
+    attributes:
+      'refinery/pv_bulletins/pv_bulletin':
+        title: Title
+        thumbnail: Thumbnail
+        bulletin_image: Bulletin Image
+        content: Content
+        creation_date: Creation Date
+        status: Status
+        associated_link: Associated Link
+        refinery_pv_category_id: Refinery Pv Category

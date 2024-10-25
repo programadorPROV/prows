@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      pv_faqs:
+        title: Pv Faqs
+    pv_faqs:
+      admin:
+        pv_faqs:
+          actions:
+            create_new: Lag en ny Pv Faq
+            reorder: Endre rekkefølgen på Pv Faqs
+            reorder_done: Ferdig å endre rekkefølgen Pv Faqs
+          records:
+            title: Pv Faqs
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Pv Faqs enda. Klikk på "Lag en ny Pv Faq" for å legge til din første pv faq.
+          pv_faq:
+            view_live_html: Vis hvordan denne pv faq ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne pv faq
+            delete: Fjern denne pv faq permanent
+      pv_faqs:
+        show:
+          other: Andre Pv Faqs
+  activerecord:
+    attributes:
+      'refinery/pv_faqs/pv_faq':
+        title: Title
+        question: Question
+        answer: Answer
+        status: Status
+        refinery_pv_category_id: Refinery Pv Category

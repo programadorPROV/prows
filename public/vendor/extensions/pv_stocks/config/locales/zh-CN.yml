@@ -1,0 +1,37 @@
+zh-CN:
+  refinery:
+    plugins:
+      pv_stocks:
+        title: Pv Stocks
+    pv_stocks:
+      admin:
+        pv_stocks:
+          actions:
+            create_new: 建立新的 Pv Stock
+            reorder: 对 Pv Stocks 重新排序
+            reorder_done: 对 Pv Stocks 的重新排序结束
+          records:
+            title: Pv Stocks
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Pv Stocks yet. Click "Add New Pv Stock" to add your first pv stock.
+            no_items_yet: 目前没有 Pv Stocks . 点击 "Add New Pv Stock" 创建一个pv stock.
+          pv_stock:
+            view_live_html: 查看 pv stock 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 pv stock
+            delete: 永久删除 pv stock
+      pv_stocks:
+        show:
+          other: 其他 Pv Stocks
+  activerecord:
+    attributes:
+      'refinery/pv_stocks/pv_stock':
+        name: Name
+        ticker: Ticker
+        market: Market
+        min_cor: Min Cor
+        average_cor: Average Cor
+        max_cor: Max Cor
+        min_usd: Min Usd
+        average_usd: Average Usd
+        max_usd: Max Usd

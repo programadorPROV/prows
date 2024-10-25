@@ -1,0 +1,12 @@
+<%@items.each do |item|%>
+	<li>
+		<%=link_to content_tag(:span, item['title'], class: "c_green_2"), item['link'], class: "light c_gray_pro_1" %>
+		<div class="light c_gray_pro_1">
+			<br/>
+			<%= item["snippet"]%>
+		</div>
+		<div>
+			<%=link_to item["link"],item["link"]%>
+		</div>
+	</li>
+<%end%>

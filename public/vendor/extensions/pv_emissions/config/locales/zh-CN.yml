@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      pv_emissions:
+        title: Pv Emissions
+    pv_emissions:
+      admin:
+        pv_emissions:
+          actions:
+            create_new: 建立新的 Pv Emission
+            reorder: 对 Pv Emissions 重新排序
+            reorder_done: 对 Pv Emissions 的重新排序结束
+          records:
+            title: Pv Emissions
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Pv Emissions yet. Click "Add New Pv Emission" to add your first pv emission.
+            no_items_yet: 目前没有 Pv Emissions . 点击 "Add New Pv Emission" 创建一个pv emission.
+          pv_emission:
+            view_live_html: 查看 pv emission 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 pv emission
+            delete: 永久删除 pv emission
+      pv_emissions:
+        show:
+          other: 其他 Pv Emissions
+  activerecord:
+    attributes:
+      'refinery/pv_emissions/pv_emission':
+        title: Title
+        description: Description
+        photo: Photo
+        refinery_pv_category_id: Refinery Pv Category

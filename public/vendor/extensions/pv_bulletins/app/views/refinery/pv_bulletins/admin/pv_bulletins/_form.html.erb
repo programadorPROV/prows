@@ -1,0 +1,70 @@
+<%= form_for [refinery, :pv_bulletins_admin, @pv_bulletin] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @pv_bulletin,
+              :include_object_name => true %>
+
+  <%= render '/refinery/admin/locale_picker',
+              :current_locale => Globalize.locale %>
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :thumbnail -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :thumbnail_id,
+               :image => @pv_bulletin.thumbnail,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :bulletin_image -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :bulletin_image_id,
+               :image => @pv_bulletin.bulletin_image,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:content],
+                :object => "pv_bulletins/pv_bulletin" -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :creation_date -%>
+    <%= f.date_select :creation_date -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :status -%>
+    <%= f.check_box :status, :checked => @pv_bulletin[:status] -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :associated_link -%>
+    <%= f.text_field :associated_link -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :refinery_pv_category_id -%>
+    <%= f.number_field :refinery_pv_category_id -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.pv_bulletins.admin.pv_bulletins.pv_bulletin'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @pv_bulletin.title) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

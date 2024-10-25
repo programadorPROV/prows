@@ -1,0 +1,30 @@
+tr:
+  refinery:
+    plugins:
+      pv_emissions:
+        title: Pv Emissions
+    pv_emissions:
+      admin:
+        pv_emissions:
+          actions:
+            create_new: Yeni Ekle Pv Emission
+            reorder: Tekrar sirala Pv Emissions
+            reorder_done: Tekrar siralama tamamlandiPv Emissions
+          records:
+            title: Pv Emissions
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Pv Emissions yok henuz.  Tikla "Yeni Ekle Pv Emission" eklemek senin ilk pv emission.
+          pv_emission:
+            view_live_html: Bunu canlu pv emission goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle pv emission
+            delete: Bunu Sil pv emission sonsuza dek
+      pv_emissions:
+        show:
+          other: Diger Pv Emissions
+  activerecord:
+    attributes:
+      'refinery/pv_emissions/pv_emission':
+        title: Title
+        description: Description
+        photo: Photo
+        refinery_pv_category_id: Refinery Pv Category

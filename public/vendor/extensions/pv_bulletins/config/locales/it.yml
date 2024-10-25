@@ -1,0 +1,34 @@
+it:
+  refinery:
+    plugins:
+      pv_bulletins:
+        title: Pv Bulletins
+    pv_bulletins:
+      admin:
+        pv_bulletins:
+          actions:
+            create_new: Aggiungi Nuovo Pv Bulletin
+            reorder: Riordina Pv Bulletins
+            reorder_done: Termina il Riordino di Pv Bulletins
+          records:
+            title: Pv Bulletins
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Pv Bulletins. Clicca "Aggiungi Nuovo Pv Bulletin" per aggiungere il tuo primo pv bulletin.
+          pv_bulletin:
+            view_live_html: Guarda live questo pv bulletin <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo pv bulletin
+            delete: Rimuovi per sempre questo pv bulletin
+      pv_bulletins:
+        show:
+          other: Altri Pv Bulletins
+  activerecord:
+    attributes:
+      'refinery/pv_bulletins/pv_bulletin':
+        title: Title
+        thumbnail: Thumbnail
+        bulletin_image: Bulletin Image
+        content: Content
+        creation_date: Creation Date
+        status: Status
+        associated_link: Associated Link
+        refinery_pv_category_id: Refinery Pv Category

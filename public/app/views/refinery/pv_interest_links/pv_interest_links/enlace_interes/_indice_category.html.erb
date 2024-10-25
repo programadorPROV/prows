@@ -1,0 +1,5 @@
+<%Refinery::PvCategories::PvCategory.where(:type_name => :link).each do |category|%>			
+
+	<%=link_to category.name, refinery.enlaces_de_interes_path(:category => category.id), :class=> "c_green_2 bolder block pad_tb_1 relative list_icon_link" %>
+
+<% end %>

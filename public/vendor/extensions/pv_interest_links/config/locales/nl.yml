@@ -1,0 +1,29 @@
+nl:
+  refinery:
+    plugins:
+      pv_interest_links:
+        title: Pv Interest Links
+    pv_interest_links:
+      admin:
+        pv_interest_links:
+          actions:
+            create_new: Nieuwe Pv Interest Link toevoegen
+            reorder: De volgorde van de Pv Interest Links wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Pv Interest Link-volgorde
+          records:
+            title: Pv Interest Links
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Pv Interest Links. Druk op 'Nieuwe Pv Interest Link toevoegen' om de eerste toe te voegen.
+          pv_interest_link:
+            view_live_html: Deze pv interest link op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze pv interest link
+            delete: Deze pv interest link definitief verwijderen
+      pv_interest_links:
+        show:
+          other: Andere Pv Interest Links
+  activerecord:
+    attributes:
+      'refinery/pv_interest_links/pv_interest_link':
+        title: Title
+        link: Link
+        status: Status

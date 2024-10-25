@@ -1,0 +1,31 @@
+tr:
+  refinery:
+    plugins:
+      pv_faqs:
+        title: Pv Faqs
+    pv_faqs:
+      admin:
+        pv_faqs:
+          actions:
+            create_new: Yeni Ekle Pv Faq
+            reorder: Tekrar sirala Pv Faqs
+            reorder_done: Tekrar siralama tamamlandiPv Faqs
+          records:
+            title: Pv Faqs
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Pv Faqs yok henuz.  Tikla "Yeni Ekle Pv Faq" eklemek senin ilk pv faq.
+          pv_faq:
+            view_live_html: Bunu canlu pv faq goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle pv faq
+            delete: Bunu Sil pv faq sonsuza dek
+      pv_faqs:
+        show:
+          other: Diger Pv Faqs
+  activerecord:
+    attributes:
+      'refinery/pv_faqs/pv_faq':
+        title: Title
+        question: Question
+        answer: Answer
+        status: Status
+        refinery_pv_category_id: Refinery Pv Category

@@ -1,0 +1,3 @@
+<%if @page.parent.children.present?%>
+	<%= render :partial => "/refinery/pages/shared/submenu_bolsa_padre", :locals => {page: @page.parent} %>
+<%end%>

@@ -1,0 +1,15 @@
+language: ruby
+cache: bundler
+bundler_args: --without development
+before_script: "bin/rake refinery:testing:dummy_app"
+env:
+  - DB=postgresql
+  - DB=mysql
+notifications:
+  webhooks:
+    - https://webhooks.gitter.im/e/b5d48907cdc89864b874
+rvm:
+  - 2.4.2
+  - 2.3.5
+  - 2.2.8
+sudo: false

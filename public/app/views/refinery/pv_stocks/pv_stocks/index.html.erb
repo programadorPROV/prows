@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="pv_stocks">
+    <% @pv_stocks.each do |pv_stock| %>
+      <li>
+        <%= link_to pv_stock.name, refinery.pv_stocks_pv_stock_path(pv_stock) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

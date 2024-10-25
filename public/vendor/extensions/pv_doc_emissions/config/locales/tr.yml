@@ -1,0 +1,31 @@
+tr:
+  refinery:
+    plugins:
+      pv_doc_emissions:
+        title: Pv Doc Emissions
+    pv_doc_emissions:
+      admin:
+        pv_doc_emissions:
+          actions:
+            create_new: Yeni Ekle Pv Doc Emission
+            reorder: Tekrar sirala Pv Doc Emissions
+            reorder_done: Tekrar siralama tamamlandiPv Doc Emissions
+          records:
+            title: Pv Doc Emissions
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Pv Doc Emissions yok henuz.  Tikla "Yeni Ekle Pv Doc Emission" eklemek senin ilk pv doc emission.
+          pv_doc_emission:
+            view_live_html: Bunu canlu pv doc emission goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle pv doc emission
+            delete: Bunu Sil pv doc emission sonsuza dek
+      pv_doc_emissions:
+        show:
+          other: Diger Pv Doc Emissions
+  activerecord:
+    attributes:
+      'refinery/pv_doc_emissions/pv_doc_emission':
+        title: Title
+        document: Document
+        url_doc: Url Doc
+        status: Status
+        refinery_pv_emission_id: Refinery Pv Emission

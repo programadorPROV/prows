@@ -1,0 +1,34 @@
+ru:
+  refinery:
+    plugins:
+      pv_board_directors:
+        title: Pv Board Directors
+    pv_board_directors:
+      admin:
+        pv_board_directors:
+          actions:
+            create_new: Добавить Pv Board Director
+            reorder: Изменить порядок Pv Board Directors
+            reorder_done: Закончить изменять порядок Pv Board Directors
+          records:
+            title: Pv Board Directors
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Pv Board Directors" не найдено. Нажмите "Добавить Pv Board Director" чтобы создать pv board director.
+          pv_board_director:
+            view_live_html: Просмотреть pv board director вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать pv board director
+            delete: Удалить pv board director навсегда
+      pv_board_directors:
+        show:
+          other: Другие Pv Board Directors
+  activerecord:
+    attributes:
+      'refinery/pv_board_directors/pv_board_director':
+        name: Name
+        last_name: Last Name
+        position: Position
+        description: Description
+        mail: Mail
+        link: Link
+        photo: Photo
+        status: Status

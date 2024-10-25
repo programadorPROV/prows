@@ -1,0 +1,29 @@
+cs:
+  refinery:
+    plugins:
+      pv_interest_links:
+        title: Pv Interest Links
+    pv_interest_links:
+      admin:
+        pv_interest_links:
+          actions:
+            create_new: Přidat Pv Interest Link
+            reorder: Řadit Pv Interest Links
+            reorder_done: Konec řazení Pv Interest Links
+          records:
+            title: Pv Interest Links
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Pv Interest Links. Zvolte "Přidat Pv Interest Link" pro přidání prvního pv interest link.
+          pv_interest_link:
+            view_live_html: Zobrazit náhled pv interest link<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit pv interest link
+            delete: Smazat pv interest link
+      pv_interest_links:
+        show:
+          other: Další Pv Interest Links
+  activerecord:
+    attributes:
+      'refinery/pv_interest_links/pv_interest_link':
+        title: Title
+        link: Link
+        status: Status

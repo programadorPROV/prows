@@ -1,0 +1,20 @@
+current directory: /home/www/vhosts/provalores.com.ni/httpdocs/public/vendor/bundle/ruby/2.3.0/gems/byebug-10.0.0/ext/byebug
+/opt/plesk/ruby/2.3.6/bin/ruby -r ./siteconf20180413-18641-v2yq7q.rb extconf.rb
+creating Makefile
+
+current directory: /home/www/vhosts/provalores.com.ni/httpdocs/public/vendor/bundle/ruby/2.3.0/gems/byebug-10.0.0/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /home/www/vhosts/provalores.com.ni/httpdocs/public/vendor/bundle/ruby/2.3.0/gems/byebug-10.0.0/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+/usr/bin/ld: cannot find -lgmp
+collect2: error: ld returned 1 exit status
+make: *** [byebug.so] Error 1
+
+make failed, exit code 2

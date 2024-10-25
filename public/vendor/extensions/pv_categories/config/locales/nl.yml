@@ -1,0 +1,31 @@
+nl:
+  refinery:
+    plugins:
+      pv_categories:
+        title: Pv Categories
+    pv_categories:
+      admin:
+        pv_categories:
+          actions:
+            create_new: Nieuwe Pv Category toevoegen
+            reorder: De volgorde van de Pv Categories wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Pv Category-volgorde
+          records:
+            title: Pv Categories
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Pv Categories. Druk op 'Nieuwe Pv Category toevoegen' om de eerste toe te voegen.
+          pv_category:
+            view_live_html: Deze pv category op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze pv category
+            delete: Deze pv category definitief verwijderen
+      pv_categories:
+        show:
+          other: Andere Pv Categories
+  activerecord:
+    attributes:
+      'refinery/pv_categories/pv_category':
+        name: Name
+        description: Description
+        status: Status
+        type: Type
+        description_type: Description Type

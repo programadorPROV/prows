@@ -1,0 +1,31 @@
+<li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(pv_home_main_section) -%>">
+  <span class='title'>
+    <%= translated_field(pv_home_main_section, :title) %>
+  </span>
+
+  <% if Refinery::I18n.frontend_locales.many? %>
+    <span class='locales'>
+      <% pv_home_main_section.translations.sort_by{ |t| Refinery::I18n.frontend_locales.index(t.locale)}.each do |translation| %>
+        <% if translation.title.present? %>
+          <%= link_to refinery.edit_pv_home_main_sections_admin_pv_home_main_section_path(pv_home_main_section, :switch_locale => translation.locale),
+                      class: 'locale', title: translation.locale.upcase do %>
+
+            <div class="<%=translation.locale %> locale_marker">
+              <%= locale_text_icon(translation.locale.upcase) %>
+            </div>
+          <% end %>
+        <% end %>
+      <% end %>
+    </span>
+  <% end %>
+
+  <span class='preview'></span>
+
+  <span class='actions'>
+    <%= action_icon(:preview, refinery.pv_home_main_sections_pv_home_main_section_path(pv_home_main_section), t('.view_live_html')) %>
+    <%= action_icon(:edit,    refinery.edit_pv_home_main_sections_admin_pv_home_main_section_path(pv_home_main_section), t('.edit') ) %>
+    <%= action_icon(:delete,  refinery.pv_home_main_sections_admin_pv_home_main_section_path(pv_home_main_section), t('.delete'),
+      { class: "cancel confirm-delete",
+        data: {confirm: t('message',  scope: 'refinery.admin.delete', title: pv_home_main_section.title)}}  ) %>
+  </span>
+</li>

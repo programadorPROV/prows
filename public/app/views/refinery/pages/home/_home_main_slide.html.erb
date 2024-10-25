@@ -1,0 +1,43 @@
+<!-- slide -->
+<div class="bck_white  h40_240_st h35_480_st">
+	<!-- Swiper -->
+	<div class="swiper_default relative">
+		<div class="swiper-wrapper">
+			<%Refinery::PvSliderImages::PvSliderImage.all.each do |image|%>
+			
+				<div class="swiper-slide bck_h_100 relative" style="background-image: url('<%=image.photo.url%>');">
+					<div class="description_head max_w_100 mar_auto bck_cover pad_lr_5_900_st intro_subpage">
+						<div class="midd_container h40_240_st h35_480_st w50_900_st pad_t_3_240_st pad_t_0_900_st">
+							<div class="midd_cell pad_2 z2">
+								<div class="content_wrap">
+									<div class="title_subpage">
+										<%=image.title%>
+									</div>
+									<div class="description_subpage body_text_2">
+										<div class="uppercase c_green_1  fs_15 lh_3 italic">
+											<ul class="list_pro inline_divs v_top_all">
+												<%if ::Refinery::Page.where(:title=>image.title).present?%>
+													<%::Refinery::Page.find_by(:title=>image.title).children.each do |internal|%>
+														<li class="pad_tb_1 pad_l_1 w100p max_w_15">
+															<%=link_to(internal.title,internal.url,:class=>"c_green_1")%>
+														</li>
+													<%end%>
+												<%end%>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<%end%>
+		</div>
+		<!-- Add Arrows -->
+		<div class="center_absolute h100p max_w_130">
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+	</div>
+</div>

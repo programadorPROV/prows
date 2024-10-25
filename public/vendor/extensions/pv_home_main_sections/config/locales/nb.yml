@@ -1,0 +1,29 @@
+nb:
+  refinery:
+    plugins:
+      pv_home_main_sections:
+        title: Pv Home Main Sections
+    pv_home_main_sections:
+      admin:
+        pv_home_main_sections:
+          actions:
+            create_new: Lag en ny Pv Home Main Section
+            reorder: Endre rekkefølgen på Pv Home Main Sections
+            reorder_done: Ferdig å endre rekkefølgen Pv Home Main Sections
+          records:
+            title: Pv Home Main Sections
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Pv Home Main Sections enda. Klikk på "Lag en ny Pv Home Main Section" for å legge til din første pv home main section.
+          pv_home_main_section:
+            view_live_html: Vis hvordan denne pv home main section ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne pv home main section
+            delete: Fjern denne pv home main section permanent
+      pv_home_main_sections:
+        show:
+          other: Andre Pv Home Main Sections
+  activerecord:
+    attributes:
+      'refinery/pv_home_main_sections/pv_home_main_section':
+        title: Title
+        photo: Photo
+        description: Description

@@ -1,0 +1,57 @@
+<%= form_for [refinery, :pv_stocks_admin, @pv_stock] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @pv_stock,
+              :include_object_name => true %>
+
+  <%= render '/refinery/admin/locale_picker',
+              :current_locale => Globalize.locale %>
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :ticker -%>
+    <%= f.text_field :ticker -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :market -%>
+    <%= f.text_field :market -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :min_cor -%>
+    <%= f.text_field :min_cor -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :average_cor -%>
+    <%= f.text_field :average_cor -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :max_cor -%>
+    <%= f.text_field :max_cor -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :min_usd -%>
+    <%= f.text_field :min_usd -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :average_usd -%>
+    <%= f.text_field :average_usd -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :max_usd -%>
+    <%= f.text_field :max_usd -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.pv_stocks.admin.pv_stocks.pv_stock'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @pv_stock.name) -%>
+<% end -%>

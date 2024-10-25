@@ -1,0 +1,31 @@
+cs:
+  refinery:
+    plugins:
+      pv_faqs:
+        title: Pv Faqs
+    pv_faqs:
+      admin:
+        pv_faqs:
+          actions:
+            create_new: Přidat Pv Faq
+            reorder: Řadit Pv Faqs
+            reorder_done: Konec řazení Pv Faqs
+          records:
+            title: Pv Faqs
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Pv Faqs. Zvolte "Přidat Pv Faq" pro přidání prvního pv faq.
+          pv_faq:
+            view_live_html: Zobrazit náhled pv faq<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit pv faq
+            delete: Smazat pv faq
+      pv_faqs:
+        show:
+          other: Další Pv Faqs
+  activerecord:
+    attributes:
+      'refinery/pv_faqs/pv_faq':
+        title: Title
+        question: Question
+        answer: Answer
+        status: Status
+        refinery_pv_category_id: Refinery Pv Category

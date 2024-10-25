@@ -1,0 +1,23 @@
+	
+		<%Refinery::PvCategories::PvCategory.where(:type_name => :link).each_with_index do |category,index|%>
+			<div class="unselected container_collapse" id="row_<%=index%>">
+				<div class="light c_gray_pro_1 block pad_b_15 action_collapse split_border" onclick="javascript:unhide('row_<%=index%>');">
+					<%= category.name%>
+				</div>
+				<div class="collpase_hide">
+					<div class="row_lm">
+						<div class="body_text_2 pad_r_4_900_st">
+							<%Refinery::PvInterestLinks::PvInterestLink.where(:refinery_pv_category_id => category.id).each do |link|%>
+								<div class="fs_18 light c_green_1 lh_2 pad_b_1">
+									<%=link.title%>
+								</div>
+									<%=link_to(link.link,link.link, :class=>"c_green_2 underline")%>
+								<br>
+								<br>
+							<%end%>
+						</div>
+					</div>
+				</div>
+			</div>
+		<% end %>
+	
